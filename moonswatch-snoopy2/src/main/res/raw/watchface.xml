@@ -11,9 +11,13 @@
       <Image resource="dial_main" />
     </PartImage>
     <AnalogClock x="0" y="0" width="450" height="450">
-      <SecondHand resource="second_hand" x="219" y="223" width="10" height="90" pivotX="0.5" pivotY="0.889" />
+      <SecondHand resource="second_hand" x="218" y="228" width="14" height="90" pivotX="0.5" pivotY="0.86" />
       <MinuteHand resource="minute_hand" x="211" y="-69" width="28" height="300" pivotX="0.5" pivotY="0.98" />
       <HourHand resource="hour_hand" x="208" y="-4" width="34" height="235" pivotX="0.5" pivotY="0.9745" />
     </AnalogClock>
+    <!-- Chronograph stopwatch hand: fixed pointing at 12 o'clock for now. -->
+    <PartImage x="215" y="-108" width="20" height="345" pivotX="0.5" pivotY="0.965">
+      <Image resource="stopwatch_hand" />
+    </PartImage>
   </Scene>
 </WatchFace>
