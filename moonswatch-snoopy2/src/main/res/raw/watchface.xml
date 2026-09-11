@@ -3,7 +3,7 @@
   <Metadata key="PREVIEW_TIME" value="10:09:32" />
   <Metadata key="CLOCK_TYPE" value="ANALOG" />
   <Scene>
-    <PartImage x="101" y="21" width="260" height="260" pivotX="0.5" pivotY="0.5">
+    <PartImage x="116" y="48" width="260" height="260" pivotX="0.5" pivotY="0.5">
       <Image resource="moon_disc" />
       <Transform target="angle" value="([MOON_PHASE_POSITION] * 12.413793)" />
     </PartImage>
