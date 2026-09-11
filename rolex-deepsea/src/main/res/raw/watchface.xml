@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WatchFace width="450" height="450">
+  <Metadata key="PREVIEW_TIME" value="10:09:32" />
+  <Metadata key="CLOCK_TYPE" value="ANALOG" />
+  <Scene>
+    <PartImage x="0" y="0" width="450" height="450">
+      <Image resource="dial_main" />
+    </PartImage>
+    <!-- Date window at 3 o'clock, where the reference dial showed a static "9". -->
+    <PartText x="319" y="217" width="36" height="24" pivotX="0.5" pivotY="0.5">
+      <Text align="CENTER" size="18">
+        <Font family="default" weight="BOLD" slant="NORMAL" />
+        <Template>%d1</Template>
+        <Parameter expression="[DAY_OF_MONTH]" name="d1" />
+      </Text>
+      <Color value="#141414" />
+    </PartText>
+    <AnalogClock x="0" y="0" width="450" height="450">
+      <HourHand resource="hour_hand" x="219" y="112" width="11" height="114" pivotX="0.5" pivotY="0.9856" />
+      <MinuteHand resource="minute_hand" x="220" y="60" width="10" height="169" pivotX="0.5" pivotY="0.9756" />
+      <SecondHand resource="second_hand" x="217" y="29" width="15" height="274" pivotX="0.5" pivotY="0.7118" />
+    </AnalogClock>
+  </Scene>
+</WatchFace>

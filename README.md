@@ -41,3 +41,9 @@ in a given push.
 
 - [`moonswatch-snoopy/`](moonswatch-snoopy/README_KO.md) - Omega x Swatch
   Moonswatch-styled dial with a rotating Snoopy moon-phase disc.
+- `moonswatch-snoopy2/` - a from-photo rebuild of the Moonswatch Snoopy dial,
+  with hour/minute hands from centre and a small-seconds hand in the 6
+  o'clock subdial.
+- `rolex-deepsea/` - Rolex Deepsea-styled dial (Mercedes hour hand, dagger
+  minute hand, sweep seconds hand) with a live day-of-month date window at
+  3 o'clock.

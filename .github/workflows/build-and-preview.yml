@@ -15,6 +15,7 @@ jobs:
     outputs:
       moonswatch-snoopy: ${{ steps.filter.outputs.moonswatch-snoopy }}
       moonswatch-snoopy2: ${{ steps.filter.outputs.moonswatch-snoopy2 }}
+      rolex-deepsea: ${{ steps.filter.outputs.rolex-deepsea }}
     steps:
       - uses: actions/checkout@v4
       - uses: dorny/paths-filter@v3
@@ -35,6 +36,43 @@ jobs:
               - 'build.gradle.kts'
               - 'settings.gradle.kts'
               - 'gradle/**'
+            rolex-deepsea:
+              - 'rolex-deepsea/**'
+              - '.github/workflows/build-and-preview.yml'
+              - '.github/scripts/**'
+              - 'build.gradle.kts'
+              - 'settings.gradle.kts'
+              - 'gradle/**'
+
+  build-rolex-deepsea:
+    needs: changes
+    if: needs.changes.outputs.rolex-deepsea == 'true'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v4
+
+      - name: Set up Java 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+          cache: gradle
+
+      - name: Make Gradle executable
+        run: chmod +x gradlew
+
+      - name: Build debug APK
+        run: ./gradlew :rolex-deepsea:assembleDebug
+
+      - name: Upload installable APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: rolex-deepsea-APK
+          path: rolex-deepsea/build/outputs/apk/debug/*.apk
+          if-no-files-found: error
 
   build-moonswatch-snoopy2:
     needs: changes
