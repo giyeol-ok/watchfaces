@@ -12,9 +12,9 @@
     </PartImage>
     <AnalogClock x="0" y="0" width="450" height="450">
       <!-- Small-seconds hand lives in the 6 o'clock subdial, not centre. -->
-      <SecondHand resource="second_hand" x="224" y="282" width="2" height="37" pivotX="0.5" pivotY="0.9815" />
-      <MinuteHand resource="minute_hand" x="221" y="67" width="8" height="159" pivotX="0.5" pivotY="0.9909" />
-      <HourHand resource="hour_hand" x="219" y="112" width="12" height="114" pivotX="0.5" pivotY="0.9885" />
+      <SecondHand resource="second_hand" x="222" y="280" width="3" height="37" pivotX="0.5" pivotY="0.9810" />
+      <MinuteHand resource="minute_hand" x="220" y="67" width="10" height="159" pivotX="0.5" pivotY="0.9876" />
+      <HourHand resource="hour_hand" x="219" y="112" width="11" height="114" pivotX="0.5" pivotY="0.9869" />
     </AnalogClock>
   </Scene>
 </WatchFace>
