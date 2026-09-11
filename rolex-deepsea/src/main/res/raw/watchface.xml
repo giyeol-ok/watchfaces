@@ -16,9 +16,9 @@
       <Color value="#141414" />
     </PartText>
     <AnalogClock x="0" y="0" width="450" height="450">
-      <HourHand resource="hour_hand" x="219" y="112" width="11" height="114" pivotX="0.5" pivotY="0.9856" />
-      <MinuteHand resource="minute_hand" x="220" y="60" width="10" height="169" pivotX="0.5" pivotY="0.9756" />
-      <SecondHand resource="second_hand" x="217" y="29" width="15" height="274" pivotX="0.5" pivotY="0.7118" />
+      <HourHand resource="hour_hand" x="200" y="112" width="49" height="114" pivotX="0.5" pivotY="0.9856" />
+      <MinuteHand resource="minute_hand" x="209" y="60" width="31" height="169" pivotX="0.5" pivotY="0.9756" />
+      <SecondHand resource="second_hand" x="203" y="29" width="43" height="274" pivotX="0.5" pivotY="0.7118" />
     </AnalogClock>
   </Scene>
 </WatchFace>
