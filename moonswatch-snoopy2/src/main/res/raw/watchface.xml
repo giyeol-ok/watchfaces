@@ -3,21 +3,17 @@
   <Metadata key="PREVIEW_TIME" value="10:09:32" />
   <Metadata key="CLOCK_TYPE" value="ANALOG" />
   <Scene>
-    <PartImage x="116" y="48" width="260" height="260" pivotX="0.5" pivotY="0.5">
+    <PartImage x="245" y="129" width="119" height="119" pivotX="0.5" pivotY="0.5">
       <Image resource="moon_disc" />
-      <Transform target="angle" value="([MOON_PHASE_POSITION] * 12.413793)" />
+      <Transform target="angle" value="(-138.9 + [MOON_PHASE_POSITION] * 12.413793)" />
     </PartImage>
     <PartImage x="0" y="0" width="450" height="450">
       <Image resource="dial_main" />
     </PartImage>
     <AnalogClock x="0" y="0" width="450" height="450">
-      <SecondHand resource="second_hand" x="218" y="228" width="14" height="90" pivotX="0.5" pivotY="0.86" />
-      <MinuteHand resource="minute_hand" x="211" y="-69" width="28" height="300" pivotX="0.5" pivotY="0.98" />
-      <HourHand resource="hour_hand" x="208" y="-4" width="34" height="235" pivotX="0.5" pivotY="0.9745" />
+      <SecondHand resource="second_hand" x="220" y="19" width="9" height="208" pivotX="0.5" pivotY="0.9873" />
+      <MinuteHand resource="minute_hand" x="220" y="49" width="9" height="177" pivotX="0.5" pivotY="0.9909" />
+      <HourHand resource="hour_hand" x="220" y="105" width="9" height="121" pivotX="0.5" pivotY="0.9885" />
     </AnalogClock>
-    <!-- Chronograph stopwatch hand: fixed pointing at 12 o'clock for now. -->
-    <PartImage x="215" y="-108" width="20" height="345" pivotX="0.5" pivotY="0.965">
-      <Image resource="stopwatch_hand" />
-    </PartImage>
   </Scene>
 </WatchFace>
