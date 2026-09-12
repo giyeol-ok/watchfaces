@@ -8,11 +8,12 @@
     </PartImage>
     <!-- Date window at 3 o'clock, where the reference dial showed a static "9". -->
     <PartText x="322" y="220" width="36" height="22" pivotX="0.5" pivotY="0.5">
-      <Text align="CENTER" size="18">
-        <Font family="rolex_date" weight="BOLD" slant="NORMAL" />
-        <Color value="#141414" />
-        <Template>%d1</Template>
-        <Parameter expression="[DAY_OF_MONTH]" name="d1" />
+      <Text align="CENTER">
+        <Font family="rolex_date" size="18" weight="BOLD" slant="NORMAL" color="#141414">
+          <Template>%d
+            <Parameter expression="[DAY]" />
+          </Template>
+        </Font>
       </Text>
     </PartText>
     <AnalogClock x="0" y="0" width="450" height="450">
