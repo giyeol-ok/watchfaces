@@ -37,6 +37,20 @@ adding a watch face.
 CI only builds and previews the watch face(s) whose files actually changed
 in a given push.
 
+### Standard requirements for every watch face
+
+- **Sweeping second hand**: any `<SecondHand>` must include
+  `<Sweep frequency="SYNC_TO_DEVICE" />` so it glides continuously instead
+  of ticking once per second. This applies to every second hand in the
+  watch face, including per-style variants (e.g. multiple `ListOption`
+  dial styles that each declare their own `AnalogClock`).
+- **Ambient/AOD compliance**: hide the second hand in ambient mode with
+  `<Variant mode="AMBIENT" target="alpha" value="0" />` (WFF ambient mode
+  cannot render a continuously animating hand), and keep at least 85% of
+  the display dark/dim in ambient to stay within the Wear OS 15%-lit-pixel
+  guideline - see `rolex-deepsea/` for the pattern (a dedicated dimmed
+  `dial_aod` image swapped in only under `AMBIENT`).
+
 ## Watch faces in this repo
 
 - [`moonswatch-snoopy/`](moonswatch-snoopy/README_KO.md) - Omega x Swatch
