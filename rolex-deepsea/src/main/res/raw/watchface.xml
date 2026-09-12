@@ -38,7 +38,7 @@
     <!-- Date window at 3 o'clock, where the reference dial showed a static "9". -->
     <PartText x="322" y="220" width="36" height="22" pivotX="0.5" pivotY="0.5">
       <Text align="CENTER">
-        <Font family="rolex_date" size="18" weight="BOLD" slant="NORMAL" color="#141414">
+        <Font family="rolex_date" size="22" weight="BOLD" slant="NORMAL" color="#141414">
           <Template>%d
             <Parameter expression="[DAY]" />
           </Template>
