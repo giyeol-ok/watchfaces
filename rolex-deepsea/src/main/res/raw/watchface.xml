@@ -10,10 +10,10 @@
     <PartText x="322" y="220" width="36" height="22" pivotX="0.5" pivotY="0.5">
       <Text align="CENTER" size="18">
         <Font family="rolex_date" weight="BOLD" slant="NORMAL" />
+        <Color value="#141414" />
         <Template>%d1</Template>
         <Parameter expression="[DAY_OF_MONTH]" name="d1" />
       </Text>
-      <Color value="#141414" />
     </PartText>
     <AnalogClock x="0" y="0" width="450" height="450">
       <HourHand resource="hour_hand" x="200" y="112" width="49" height="114" pivotX="0.5" pivotY="0.9856" />
