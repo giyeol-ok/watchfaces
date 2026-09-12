@@ -7,7 +7,7 @@
       <Image resource="dial_main" />
     </PartImage>
     <!-- Date window at 3 o'clock, where the reference dial showed a static "9". -->
-    <PartText x="319" y="218" width="36" height="22" pivotX="0.5" pivotY="0.5">
+    <PartText x="322" y="220" width="36" height="22" pivotX="0.5" pivotY="0.5">
       <Text align="CENTER" size="18">
         <Font family="rolex_date" weight="BOLD" slant="NORMAL" />
         <Template>%d1</Template>
