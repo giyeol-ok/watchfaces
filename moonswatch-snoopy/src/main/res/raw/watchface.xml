@@ -18,7 +18,7 @@
         </PartImage>
         <PartImage x="0" y="0" width="450" height="450"><Image resource="dial_lunar" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage>
         <AnalogClock x="0" y="0" width="450" height="450">
-          <SecondHand resource="second_lunar_final" x="217" y="265" width="14" height="60" pivotX="0.5" pivotY="0.866667"><Variant mode="AMBIENT" target="alpha" value="0" /></SecondHand>
+          <SecondHand resource="second_lunar_final" x="217" y="265" width="14" height="60" pivotX="0.5" pivotY="0.866667"><Sweep frequency="SYNC_TO_DEVICE" /><Variant mode="AMBIENT" target="alpha" value="0" /></SecondHand>
           <MinuteHand resource="minute_lunar_final" x="210" y="55" width="28" height="184" pivotX="0.483107" pivotY="0.924054"><Variant mode="AMBIENT" target="alpha" value="0" /></MinuteHand>
           <HourHand resource="hour_lunar_final" x="210" y="103" width="29" height="137" pivotX="0.484791" pivotY="0.890014"><Variant mode="AMBIENT" target="alpha" value="0" /></HourHand>
         </AnalogClock>
@@ -31,7 +31,7 @@
         </PartImage>
         <PartImage x="0" y="0" width="450" height="450"><Image resource="dial_white" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage>
         <AnalogClock x="0" y="0" width="450" height="450">
-          <SecondHand resource="second_white_final" x="217" y="265" width="14" height="60" pivotX="0.5" pivotY="0.866667"><Variant mode="AMBIENT" target="alpha" value="0" /></SecondHand>
+          <SecondHand resource="second_white_final" x="217" y="265" width="14" height="60" pivotX="0.5" pivotY="0.866667"><Sweep frequency="SYNC_TO_DEVICE" /><Variant mode="AMBIENT" target="alpha" value="0" /></SecondHand>
           <MinuteHand resource="minute_white_final" x="210" y="55" width="28" height="184" pivotX="0.483107" pivotY="0.924054"><Variant mode="AMBIENT" target="alpha" value="0" /></MinuteHand>
           <HourHand resource="hour_white_final" x="210" y="103" width="29" height="137" pivotX="0.484791" pivotY="0.890014"><Variant mode="AMBIENT" target="alpha" value="0" /></HourHand>
         </AnalogClock>
