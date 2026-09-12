@@ -6,6 +6,15 @@ android {
     namespace = "com.giyeol.rolexdeepsea"
     compileSdk = 33
 
+    signingConfigs {
+        getByName("debug") {
+            storeFile = rootProject.file("debug.keystore")
+            storePassword = "android"
+            keyAlias = "androiddebugkey"
+            keyPassword = "android"
+        }
+    }
+
     defaultConfig {
         applicationId = "com.giyeol.rolexdeepsea"
         minSdk = 33

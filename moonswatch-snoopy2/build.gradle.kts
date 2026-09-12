@@ -6,6 +6,15 @@ android {
     namespace = "com.giyeol.moonwatch2"
     compileSdk = 33
 
+    signingConfigs {
+        getByName("debug") {
+            storeFile = rootProject.file("debug.keystore")
+            storePassword = "android"
+            keyAlias = "androiddebugkey"
+            keyPassword = "android"
+        }
+    }
+
     defaultConfig {
         applicationId = "com.giyeol.moonwatch2"
         minSdk = 33
