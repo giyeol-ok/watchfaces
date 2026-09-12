@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
   <string name="watch_face_name">Rolex Deepsea</string>
+  <string name="dial_color_label">Dial color</string>
+  <string name="dial_blue_label">Blue</string>
+  <string name="dial_black_label">Black</string>
+  <string name="dial_green_label">Green</string>
 </resources>

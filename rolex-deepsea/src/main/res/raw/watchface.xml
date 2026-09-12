@@ -2,10 +2,31 @@
 <WatchFace width="450" height="450">
   <Metadata key="PREVIEW_TIME" value="10:09:32" />
   <Metadata key="CLOCK_TYPE" value="ANALOG" />
+  <UserConfigurations>
+    <ListConfiguration id="dial_color" displayName="dial_color_label" screenReaderText="dial_color_label" defaultValue="0">
+      <ListOption id="0" displayName="dial_blue_label" screenReaderText="dial_blue_label" />
+      <ListOption id="1" displayName="dial_black_label" screenReaderText="dial_black_label" />
+      <ListOption id="2" displayName="dial_green_label" screenReaderText="dial_green_label" />
+    </ListConfiguration>
+  </UserConfigurations>
   <Scene>
-    <PartImage x="0" y="0" width="450" height="450">
-      <Image resource="dial_main" />
-    </PartImage>
+    <ListConfiguration id="dial_color">
+      <ListOption id="0">
+        <PartImage x="0" y="0" width="450" height="450">
+          <Image resource="dial_blue" />
+        </PartImage>
+      </ListOption>
+      <ListOption id="1">
+        <PartImage x="0" y="0" width="450" height="450">
+          <Image resource="dial_black" />
+        </PartImage>
+      </ListOption>
+      <ListOption id="2">
+        <PartImage x="0" y="0" width="450" height="450">
+          <Image resource="dial_green" />
+        </PartImage>
+      </ListOption>
+    </ListConfiguration>
     <!-- Date window at 3 o'clock, where the reference dial showed a static "9". -->
     <PartText x="322" y="220" width="36" height="22" pivotX="0.5" pivotY="0.5">
       <Text align="CENTER">
