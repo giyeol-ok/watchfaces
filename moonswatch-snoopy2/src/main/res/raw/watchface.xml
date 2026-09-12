@@ -3,20 +3,19 @@
   <Metadata key="PREVIEW_TIME" value="10:09:32" />
   <Metadata key="CLOCK_TYPE" value="ANALOG" />
   <Scene>
-    <PartImage x="266" y="149" width="100" height="100" pivotX="0.5" pivotY="0.5">
+    <PartImage x="249" y="135" width="122" height="122" pivotX="0.5" pivotY="0.5">
       <Image resource="moon_disc" />
-      <Transform target="angle" value="(-138.9 + [MOON_PHASE_POSITION] * 12.413793)" />
+      <Transform target="angle" value="([MOON_PHASE_POSITION] * 12.413793) - 49" />
     </PartImage>
     <PartImage x="0" y="0" width="450" height="450">
       <Image resource="dial_main" />
     </PartImage>
     <AnalogClock x="0" y="0" width="450" height="450">
-      <!-- Small-seconds hand lives in the 6 o'clock subdial, not centre. -->
-      <SecondHand resource="second_hand" x="222" y="280" width="3" height="37" pivotX="0.5" pivotY="0.9810">
+      <SecondHand resource="second_hand" x="217" y="268" width="14" height="60" pivotX="0.5" pivotY="0.866667">
         <Sweep frequency="SYNC_TO_DEVICE" />
       </SecondHand>
-      <MinuteHand resource="minute_hand" x="220" y="68" width="10" height="159" pivotX="0.5" pivotY="0.9876" />
-      <HourHand resource="hour_hand" x="221" y="112" width="8" height="114" pivotX="0.5" pivotY="0.9869" />
+      <MinuteHand resource="minute_hand" x="211" y="55" width="28" height="184" pivotX="0.483107" pivotY="0.924054" />
+      <HourHand resource="hour_hand" x="211" y="103" width="29" height="137" pivotX="0.484791" pivotY="0.890014" />
     </AnalogClock>
   </Scene>
 </WatchFace>
