@@ -60,4 +60,7 @@ in a given push.
   o'clock subdial.
 - `rolex-deepsea/` - Rolex Deepsea-styled dial (Mercedes hour hand, dagger
   minute hand, sweep seconds hand) with a live day-of-month date window at
-  3 o'clock.
+  3 o'clock. Selectable blue/black/green dial color.
+- `rolex-deepsea2/` - same hands/date/AOD setup as `rolex-deepsea`, with a
+  4-way selectable dial color (pink, blue, black, green) from a newer set
+  of reference renders.
