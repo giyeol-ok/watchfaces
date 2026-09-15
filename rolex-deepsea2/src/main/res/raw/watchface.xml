@@ -43,9 +43,9 @@
       <Variant mode="AMBIENT" target="alpha" value="255" />
     </PartImage>
     <!-- Date window at 3 o'clock, where the reference dial showed a static "9". -->
-    <PartText x="322" y="210" width="36" height="42" pivotX="0.5" pivotY="0.5">
+    <PartText x="321" y="210" width="36" height="42" pivotX="0.5" pivotY="0.5">
       <Text align="CENTER">
-        <Font family="rolex_date" size="30" weight="BOLD" slant="NORMAL" color="#141414">
+        <Font family="rolex_date" size="33" weight="BOLD" slant="NORMAL" color="#141414">
           <Template>%d
             <Parameter expression="[DAY]" />
           </Template>
