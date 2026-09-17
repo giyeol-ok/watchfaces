@@ -165,7 +165,7 @@
         </ListOption>
         <ListOption id="7">
           <AnalogClock x="0" y="0" width="450" height="450">
-            <HourHand resource="hour_hand_pink_yellow_cyan" x="203" y="140" width="34" height="108" pivotX="0.6469" pivotY="0.8035" />
+            <HourHand resource="hour_hand_pink_yellow_cyan" x="208" y="140" width="33" height="108" pivotX="0.5304" pivotY="0.8045" />
             <MinuteHand resource="minute_hand_pink_yellow_cyan" x="211" y="93" width="37" height="149" pivotX="0.3801" pivotY="0.8978" />
             <SecondHand resource="second_hand_pink_yellow_cyan" x="219" y="258" width="13" height="44" pivotX="0.5291" pivotY="0.9008">
               <Sweep frequency="SYNC_TO_DEVICE" />
