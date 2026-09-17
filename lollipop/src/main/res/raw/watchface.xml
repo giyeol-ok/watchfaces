@@ -119,12 +119,12 @@
     <ListConfiguration id="dial_color">
         <ListOption id="0">
           <AnalogClock x="0" y="0" width="450" height="450">
-            <MinuteHand resource="minute_hand_blue" x="211" y="101" width="27" height="146" pivotX="0.5146" pivotY="0.8642" />
-            <HourHand resource="hour_hand_blue" x="212" y="140" width="27" height="98" pivotX="0.4854" pivotY="0.8884" />
             <SecondHand resource="second_hand_blue" x="219" y="258" width="13" height="44" pivotX="0.5291" pivotY="0.9008">
               <Sweep frequency="SYNC_TO_DEVICE" />
               <Variant mode="AMBIENT" target="alpha" value="0" />
             </SecondHand>
+            <MinuteHand resource="minute_hand_blue" x="211" y="101" width="27" height="146" pivotX="0.5146" pivotY="0.8642" />
+            <HourHand resource="hour_hand_blue" x="212" y="140" width="27" height="98" pivotX="0.4854" pivotY="0.8884" />
           </AnalogClock>
         </ListOption>
         <ListOption id="1">
@@ -165,12 +165,12 @@
         </ListOption>
         <ListOption id="7">
           <AnalogClock x="0" y="0" width="450" height="450">
-            <MinuteHand resource="minute_hand_pink_yellow_cyan" x="214" y="115" width="23" height="124" pivotX="0.488" pivotY="0.9079" />
-            <HourHand resource="hour_hand_pink_yellow_cyan" x="213" y="159" width="24" height="80" pivotX="0.4918" pivotY="0.8529" />
             <SecondHand resource="second_hand_pink_yellow_cyan" x="219" y="258" width="13" height="44" pivotX="0.5291" pivotY="0.9008">
               <Sweep frequency="SYNC_TO_DEVICE" />
               <Variant mode="AMBIENT" target="alpha" value="0" />
             </SecondHand>
+            <MinuteHand resource="minute_hand_pink_yellow_cyan" x="214" y="115" width="23" height="124" pivotX="0.488" pivotY="0.9079" />
+            <HourHand resource="hour_hand_pink_yellow_cyan" x="213" y="159" width="24" height="80" pivotX="0.4918" pivotY="0.8529" />
           </AnalogClock>
         </ListOption>
     </ListConfiguration>
