@@ -65,5 +65,9 @@ in a given push.
   4-way selectable dial color (pink, blue, black, green) from a newer set
   of reference renders.
 - `lollipop/` - Audemars Piguet Royal Oak x Swatch-styled octagonal/dodecagonal
-  dial (blue "Royal Re" colorway) with hour/minute hands from centre and a
-  small-seconds hand in the 6 o'clock subdial.
+  dial with an 8-way selectable dial color (blue, pink/red, blue/orange,
+  green, lime/blue, black/steel, rainbow, pink/yellow/cyan), each with its
+  own hand set matching the colorway. The blue and pink/yellow/cyan dials
+  have hour/minute hands from centre plus a small-seconds hand in the 6
+  o'clock subdial; the other six are 2-hand (hour/minute only) designs,
+  matching their reference renders.

@@ -1,4 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
   <string name="watch_face_name">Lollipop</string>
+  <string name="dial_color_label">Dial color</string>
+  <string name="dial_blue_label">Blue</string>
+  <string name="dial_pink_red_label">Pink/Red</string>
+  <string name="dial_blue_orange_label">Blue/Orange</string>
+  <string name="dial_green_label">Green</string>
+  <string name="dial_lime_blue_label">Lime/Blue</string>
+  <string name="dial_black_steel_label">Black/Steel</string>
+  <string name="dial_rainbow_label">Rainbow</string>
+  <string name="dial_pink_yellow_cyan_label">Pink/Yellow/Cyan</string>
 </resources>
