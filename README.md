@@ -64,3 +64,6 @@ in a given push.
 - `rolex-deepsea2/` - same hands/date/AOD setup as `rolex-deepsea`, with a
   4-way selectable dial color (pink, blue, black, green) from a newer set
   of reference renders.
+- `lollipop/` - Audemars Piguet Royal Oak x Swatch-styled octagonal/dodecagonal
+  dial (blue "Royal Re" colorway) with hour/minute hands from centre and a
+  small-seconds hand in the 6 o'clock subdial.

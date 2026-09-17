@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WatchFace width="450" height="450">
+  <Metadata key="PREVIEW_TIME" value="10:09:32" />
+  <Metadata key="CLOCK_TYPE" value="ANALOG" />
+  <Scene>
+    <PartImage x="0" y="0" width="450" height="450">
+      <Image resource="dial" />
+      <Variant mode="AMBIENT" target="alpha" value="0" />
+    </PartImage>
+    <!-- Dimmed, low-power dial shown only in ambient/AOD mode. -->
+    <PartImage x="0" y="0" width="450" height="450" alpha="0">
+      <Image resource="dial_aod" />
+      <Variant mode="AMBIENT" target="alpha" value="255" />
+    </PartImage>
+    <AnalogClock x="0" y="0" width="450" height="450">
+      <HourHand resource="hour_hand" x="212" y="140" width="27" height="98" pivotX="0.4854" pivotY="0.8884" />
+      <MinuteHand resource="minute_hand" x="211" y="101" width="27" height="146" pivotX="0.5146" pivotY="0.8642" />
+      <SecondHand resource="second_hand" x="219" y="258" width="13" height="44" pivotX="0.5291" pivotY="0.9008">
+        <Sweep frequency="SYNC_TO_DEVICE" />
+        <Variant mode="AMBIENT" target="alpha" value="0" />
+      </SecondHand>
+    </AnalogClock>
+  </Scene>
+</WatchFace>
