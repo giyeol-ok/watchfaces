@@ -123,8 +123,8 @@
               <Sweep frequency="SYNC_TO_DEVICE" />
               <Variant mode="AMBIENT" target="alpha" value="0" />
             </SecondHand>
-            <MinuteHand resource="minute_hand_blue" x="211" y="99" width="27" height="146" pivotX="0.5146" pivotY="0.8642" />
-            <HourHand resource="hour_hand_blue" x="212" y="138" width="27" height="98" pivotX="0.4854" pivotY="0.8884" />
+            <MinuteHand resource="minute_hand_blue" x="213" y="99" width="27" height="146" pivotX="0.5146" pivotY="0.8642" />
+            <HourHand resource="hour_hand_blue" x="213" y="139" width="27" height="98" pivotX="0.4854" pivotY="0.8884" />
           </AnalogClock>
         </ListOption>
         <ListOption id="1">
