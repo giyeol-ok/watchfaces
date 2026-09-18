@@ -154,7 +154,7 @@
         <ListOption id="5">
           <AnalogClock x="0" y="0" width="450" height="450">
             <MinuteHand resource="minute_hand_black_steel" x="213" y="85" width="29" height="154" pivotX="0.3973" pivotY="0.9068" />
-            <HourHand resource="hour_hand_black_steel" x="205" y="142" width="31" height="99" pivotX="0.6319" pivotY="0.8419" />
+            <HourHand resource="hour_hand_black_steel" x="208" y="139" width="31" height="99" pivotX="0.6319" pivotY="0.8419" />
           </AnalogClock>
         </ListOption>
         <ListOption id="6">
