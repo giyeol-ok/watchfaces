@@ -130,7 +130,7 @@
         <ListOption id="1">
           <AnalogClock x="0" y="0" width="450" height="450">
             <MinuteHand resource="minute_hand_pink_red" x="210" y="91" width="30" height="148" pivotX="0.4934" pivotY="0.9076" />
-            <HourHand resource="hour_hand_pink_red" x="208" y="138" width="30" height="101" pivotX="0.6197" pivotY="0.8373" />
+            <HourHand resource="hour_hand_pink_red" x="209" y="137" width="30" height="101" pivotX="0.6197" pivotY="0.8373" />
           </AnalogClock>
         </ListOption>
         <ListOption id="2">
