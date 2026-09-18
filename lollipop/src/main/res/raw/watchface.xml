@@ -119,58 +119,58 @@
     <ListConfiguration id="dial_color">
         <ListOption id="0">
           <AnalogClock x="0" y="0" width="450" height="450">
-            <SecondHand resource="second_hand_blue" x="219" y="258" width="13" height="44" pivotX="0.5291" pivotY="0.9008">
+            <SecondHand resource="second_hand_blue" x="218" y="256" width="13" height="44" pivotX="0.5291" pivotY="0.9008">
               <Sweep frequency="SYNC_TO_DEVICE" />
               <Variant mode="AMBIENT" target="alpha" value="0" />
             </SecondHand>
-            <MinuteHand resource="minute_hand_blue" x="211" y="101" width="27" height="146" pivotX="0.5146" pivotY="0.8642" />
-            <HourHand resource="hour_hand_blue" x="212" y="140" width="27" height="98" pivotX="0.4854" pivotY="0.8884" />
+            <MinuteHand resource="minute_hand_blue" x="211" y="99" width="27" height="146" pivotX="0.5146" pivotY="0.8642" />
+            <HourHand resource="hour_hand_blue" x="212" y="138" width="27" height="98" pivotX="0.4854" pivotY="0.8884" />
           </AnalogClock>
         </ListOption>
         <ListOption id="1">
           <AnalogClock x="0" y="0" width="450" height="450">
-            <MinuteHand resource="minute_hand_pink_red" x="210" y="93" width="30" height="148" pivotX="0.4934" pivotY="0.9076" />
-            <HourHand resource="hour_hand_pink_red" x="207" y="143" width="30" height="101" pivotX="0.6197" pivotY="0.8373" />
+            <MinuteHand resource="minute_hand_pink_red" x="210" y="91" width="30" height="148" pivotX="0.4934" pivotY="0.9076" />
+            <HourHand resource="hour_hand_pink_red" x="206" y="140" width="30" height="101" pivotX="0.6197" pivotY="0.8373" />
           </AnalogClock>
         </ListOption>
         <ListOption id="2">
           <AnalogClock x="0" y="0" width="450" height="450">
-            <MinuteHand resource="minute_hand_blue_orange" x="211" y="97" width="32" height="145" pivotX="0.4342" pivotY="0.8972" />
-            <HourHand resource="hour_hand_blue_orange" x="206" y="144" width="33" height="99" pivotX="0.5809" pivotY="0.8431" />
+            <MinuteHand resource="minute_hand_blue_orange" x="211" y="95" width="32" height="145" pivotX="0.4342" pivotY="0.8972" />
+            <HourHand resource="hour_hand_blue_orange" x="206" y="142" width="33" height="99" pivotX="0.5809" pivotY="0.8431" />
           </AnalogClock>
         </ListOption>
         <ListOption id="3">
           <AnalogClock x="0" y="0" width="450" height="450">
-            <MinuteHand resource="minute_hand_green" x="212" y="92" width="30" height="150" pivotX="0.4293" pivotY="0.8999" />
-            <HourHand resource="hour_hand_green" x="207" y="143" width="30" height="101" pivotX="0.6016" pivotY="0.8319" />
+            <MinuteHand resource="minute_hand_green" x="212" y="90" width="30" height="150" pivotX="0.4293" pivotY="0.8999" />
+            <HourHand resource="hour_hand_green" x="207" y="141" width="30" height="101" pivotX="0.6016" pivotY="0.8319" />
           </AnalogClock>
         </ListOption>
         <ListOption id="4">
           <AnalogClock x="0" y="0" width="450" height="450">
-            <MinuteHand resource="minute_hand_lime_blue" x="212" y="103" width="24" height="136" pivotX="0.5418" pivotY="0.9126" />
-            <HourHand resource="hour_hand_lime_blue" x="212" y="143" width="24" height="99" pivotX="0.5596" pivotY="0.8555" />
+            <MinuteHand resource="minute_hand_lime_blue" x="212" y="101" width="24" height="136" pivotX="0.5418" pivotY="0.9126" />
+            <HourHand resource="hour_hand_lime_blue" x="212" y="140" width="24" height="99" pivotX="0.5596" pivotY="0.8555" />
           </AnalogClock>
         </ListOption>
         <ListOption id="5">
           <AnalogClock x="0" y="0" width="450" height="450">
-            <MinuteHand resource="minute_hand_black_steel" x="214" y="88" width="29" height="154" pivotX="0.3973" pivotY="0.9068" />
-            <HourHand resource="hour_hand_black_steel" x="206" y="144" width="31" height="99" pivotX="0.6319" pivotY="0.8419" />
+            <MinuteHand resource="minute_hand_black_steel" x="213" y="85" width="29" height="154" pivotX="0.3973" pivotY="0.9068" />
+            <HourHand resource="hour_hand_black_steel" x="205" y="142" width="31" height="99" pivotX="0.6319" pivotY="0.8419" />
           </AnalogClock>
         </ListOption>
         <ListOption id="6">
           <AnalogClock x="0" y="0" width="450" height="450">
-            <MinuteHand resource="minute_hand_rainbow" x="211" y="93" width="37" height="149" pivotX="0.3801" pivotY="0.8978" />
-            <HourHand resource="hour_hand_rainbow" x="209" y="138" width="33" height="108" pivotX="0.5304" pivotY="0.8045" />
+            <MinuteHand resource="minute_hand_rainbow" x="211" y="91" width="37" height="149" pivotX="0.3801" pivotY="0.8978" />
+            <HourHand resource="hour_hand_rainbow" x="207" y="138" width="33" height="108" pivotX="0.5304" pivotY="0.8045" />
           </AnalogClock>
         </ListOption>
         <ListOption id="7">
           <AnalogClock x="0" y="0" width="450" height="450">
-            <SecondHand resource="second_hand_pink_yellow_cyan" x="219" y="258" width="13" height="44" pivotX="0.5291" pivotY="0.9008">
+            <SecondHand resource="second_hand_pink_yellow_cyan" x="218" y="256" width="13" height="44" pivotX="0.5291" pivotY="0.9008">
               <Sweep frequency="SYNC_TO_DEVICE" />
               <Variant mode="AMBIENT" target="alpha" value="0" />
             </SecondHand>
-            <MinuteHand resource="minute_hand_pink_yellow_cyan" x="214" y="115" width="23" height="124" pivotX="0.488" pivotY="0.9079" />
-            <HourHand resource="hour_hand_pink_yellow_cyan" x="213" y="159" width="24" height="80" pivotX="0.4918" pivotY="0.8529" />
+            <MinuteHand resource="minute_hand_pink_yellow_cyan" x="214" y="112" width="23" height="124" pivotX="0.488" pivotY="0.9079" />
+            <HourHand resource="hour_hand_pink_yellow_cyan" x="213" y="157" width="24" height="80" pivotX="0.4918" pivotY="0.8529" />
           </AnalogClock>
         </ListOption>
     </ListConfiguration>
