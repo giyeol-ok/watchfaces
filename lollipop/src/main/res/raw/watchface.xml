@@ -169,8 +169,8 @@
               <Sweep frequency="SYNC_TO_DEVICE" />
               <Variant mode="AMBIENT" target="alpha" value="0" />
             </SecondHand>
-            <MinuteHand resource="minute_hand_pink_yellow_cyan" x="214" y="112" width="23" height="124" pivotX="0.488" pivotY="0.9079" />
-            <HourHand resource="hour_hand_pink_yellow_cyan" x="213" y="157" width="24" height="80" pivotX="0.4918" pivotY="0.8529" />
+            <MinuteHand resource="minute_hand_pink_yellow_cyan" x="215" y="114" width="23" height="124" pivotX="0.488" pivotY="0.9079" />
+            <HourHand resource="hour_hand_pink_yellow_cyan" x="214" y="159" width="24" height="80" pivotX="0.4918" pivotY="0.8529" />
           </AnalogClock>
         </ListOption>
     </ListConfiguration>
