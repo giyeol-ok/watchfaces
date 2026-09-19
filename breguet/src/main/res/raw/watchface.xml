@@ -14,20 +14,20 @@
     </PartImage>
 
     <!-- Tourbillon cage: rotates once per minute, 6 degrees per second. -->
-    <PartImage x="186" y="221" width="186" height="186" pivotX="0.5" pivotY="0.5">
+    <PartImage x="191" y="216" width="186" height="186" pivotX="0.5" pivotY="0.5">
       <Image resource="tourbillon_cage" />
       <Transform target="angle" value="[SECOND]*6" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
     </PartImage>
 
     <!-- Tourbillon bridge: fixed, drawn over the rotating cage. -->
-    <PartImage x="154" y="294" width="243" height="47">
+    <PartImage x="159" y="289" width="243" height="47">
       <Image resource="tourbillon_bridge" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
     </PartImage>
 
     <!-- Weekday window, 10-11 o'clock -->
-    <PartText x="76" y="71" width="33" height="23">
+    <PartText x="74" y="76" width="33" height="20">
       <Text align="CENTER" verticalAlign="CENTER" isAutoSize="true" maxLines="1">
         <Font family="libre_baskerville_regular" size="20" minSize="10"
               letterSpacing="-0.03" color="#141d33">
@@ -37,7 +37,7 @@
     </PartText>
 
     <!-- Month window, 1-2 o'clock -->
-    <PartText x="333" y="70" width="35" height="23">
+    <PartText x="332" y="75" width="36" height="22">
       <Text align="CENTER" verticalAlign="CENTER" isAutoSize="true" maxLines="1">
         <Font family="libre_baskerville_regular" size="20" minSize="10"
               letterSpacing="-0.03" color="#141d33">
