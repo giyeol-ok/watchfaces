@@ -18,6 +18,7 @@ jobs:
       rolex-deepsea: ${{ steps.filter.outputs.rolex-deepsea }}
       rolex-deepsea2: ${{ steps.filter.outputs.rolex-deepsea2 }}
       lollipop: ${{ steps.filter.outputs.lollipop }}
+      breguet: ${{ steps.filter.outputs.breguet }}
     steps:
       - uses: actions/checkout@v4
       - uses: dorny/paths-filter@v3
@@ -59,6 +60,43 @@ jobs:
               - 'build.gradle.kts'
               - 'settings.gradle.kts'
               - 'gradle/**'
+            breguet:
+              - 'breguet/**'
+              - '.github/workflows/build-and-preview.yml'
+              - '.github/scripts/**'
+              - 'build.gradle.kts'
+              - 'settings.gradle.kts'
+              - 'gradle/**'
+
+  build-breguet:
+    needs: changes
+    if: needs.changes.outputs.breguet == 'true'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v4
+
+      - name: Set up Java 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+          cache: gradle
+
+      - name: Make Gradle executable
+        run: chmod +x gradlew
+
+      - name: Build debug APK
+        run: ./gradlew :breguet:assembleDebug
+
+      - name: Upload installable APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: breguet-APK
+          path: breguet/build/outputs/apk/debug/*.apk
+          if-no-files-found: error
 
   build-lollipop:
     needs: changes

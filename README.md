@@ -71,3 +71,7 @@ in a given push.
   have hour/minute hands from centre plus a small-seconds hand in the 6
   o'clock subdial; the other six are 2-hand (hour/minute only) designs,
   matching their reference renders.
+- `breguet/` - Breguet-styled tourbillon/star-map dial with hour and minute
+  hands from centre plus a date hand pointing at the inner 1-31 date ring.
+  The current weekday and month are shown as 3-letter abbreviations in the
+  dial's two white windows (10-11 o'clock and 1-2 o'clock).
