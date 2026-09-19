@@ -21,7 +21,7 @@
     </PartImage>
 
     <!-- Tourbillon bridge: fixed, drawn over the rotating cage. -->
-    <PartImage x="145" y="280" width="270" height="65">
+    <PartImage x="141" y="294" width="270" height="47">
       <Image resource="tourbillon_bridge" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
     </PartImage>
