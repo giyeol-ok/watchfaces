@@ -27,7 +27,7 @@
     </PartImage>
 
     <!-- Weekday window, 10-11 o'clock -->
-    <PartText x="74" y="76" width="33" height="20">
+    <PartText x="79" y="79" width="33" height="20">
       <Text align="CENTER" verticalAlign="CENTER" isAutoSize="true" maxLines="1">
         <Font family="libre_baskerville_regular" size="20" minSize="10"
               letterSpacing="-0.03" color="#141d33">
@@ -37,7 +37,7 @@
     </PartText>
 
     <!-- Month window, 1-2 o'clock -->
-    <PartText x="332" y="75" width="36" height="22">
+    <PartText x="337" y="78" width="36" height="22">
       <Text align="CENTER" verticalAlign="CENTER" isAutoSize="true" maxLines="1">
         <Font family="libre_baskerville_regular" size="20" minSize="10"
               letterSpacing="-0.03" color="#141d33">
