@@ -11,7 +11,9 @@
       <Image resource="dial_main" />
     </PartImage>
     <AnalogClock x="0" y="0" width="450" height="450">
-      <SecondHand resource="second_hand" x="217" y="268" width="14" height="60" pivotX="0.5" pivotY="0.866667" />
+      <SecondHand resource="second_hand" x="217" y="268" width="14" height="60" pivotX="0.5" pivotY="0.866667">
+        <Sweep frequency="SYNC_TO_DEVICE" />
+      </SecondHand>
       <MinuteHand resource="minute_hand" x="211" y="55" width="28" height="184" pivotX="0.483107" pivotY="0.924054" />
       <HourHand resource="hour_hand" x="211" y="103" width="29" height="137" pivotX="0.484791" pivotY="0.890014" />
     </AnalogClock>

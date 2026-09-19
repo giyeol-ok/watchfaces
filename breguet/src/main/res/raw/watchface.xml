@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WatchFace width="450" height="450">
+  <Metadata key="PREVIEW_TIME" value="22:27:00" />
+  <Metadata key="CLOCK_TYPE" value="ANALOG" />
+  <Scene>
+    <PartImage x="0" y="0" width="450" height="450">
+      <Image resource="dial" />
+      <Variant mode="AMBIENT" target="alpha" value="0" />
+    </PartImage>
+    <!-- Dimmed, low-power dial shown only in ambient/AOD mode. -->
+    <PartImage x="0" y="0" width="450" height="450" alpha="0">
+      <Image resource="dial_aod" />
+      <Variant mode="AMBIENT" target="alpha" value="255" />
+    </PartImage>
+
+    <!-- Tourbillon cage: rotates once per minute, 6 degrees per second. -->
+    <PartImage x="191" y="216" width="186" height="186" pivotX="0.5" pivotY="0.5">
+      <Image resource="tourbillon_cage" />
+      <Transform target="angle" value="[SECOND]*6" />
+      <Variant mode="AMBIENT" target="alpha" value="0" />
+    </PartImage>
+
+    <!-- Tourbillon bridge: fixed, drawn over the rotating cage. -->
+    <PartImage x="159" y="289" width="243" height="47">
+      <Image resource="tourbillon_bridge" />
+      <Variant mode="AMBIENT" target="alpha" value="0" />
+    </PartImage>
+
+    <!-- Weekday window, 10-11 o'clock -->
+    <PartText x="79" y="79" width="33" height="20">
+      <Text align="CENTER" verticalAlign="CENTER" isAutoSize="true" maxLines="1">
+        <Font family="libre_baskerville_regular" size="20" minSize="10"
+              letterSpacing="-0.03" color="#141d33">
+          <Template>%s<Parameter expression="[DAY_OF_WEEK_S]" /></Template>
+        </Font>
+      </Text>
+    </PartText>
+
+    <!-- Month window, 1-2 o'clock -->
+    <PartText x="337" y="78" width="36" height="22">
+      <Text align="CENTER" verticalAlign="CENTER" isAutoSize="true" maxLines="1">
+        <Font family="libre_baskerville_regular" size="20" minSize="10"
+              letterSpacing="-0.03" color="#141d33">
+          <Template>%s<Parameter expression="[MONTH_S]" /></Template>
+        </Font>
+      </Text>
+    </PartText>
+
+    <!-- Date hand: points at the inner 1-31 date ring. -->
+    <PartImage x="211" y="86" width="28" height="149" pivotX="0.5" pivotY="0.9325">
+      <Image resource="date_hand" />
+      <Transform target="angle" value="259 + ([DAY]-1)*6.9" />
+    </PartImage>
+
+    <AnalogClock x="0" y="0" width="450" height="450">
+      <HourHand resource="hour_hand" x="210" y="71" width="32" height="171" pivotX="0.4774" pivotY="0.8983" />
+      <MinuteHand resource="minute_hand" x="214" y="46" width="28" height="198" pivotX="0.4667" pivotY="0.9196" />
+    </AnalogClock>
+  </Scene>
+</WatchFace>

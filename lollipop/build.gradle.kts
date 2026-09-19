@@ -3,7 +3,7 @@ plugins {
 }
 
 android {
-    namespace = "com.giyeol.moonwatch2"
+    namespace = "com.giyeol.lollipop"
     compileSdk = 33
 
     signingConfigs {
@@ -16,7 +16,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "com.giyeol.moonwatch2"
+        applicationId = "com.giyeol.lollipop"
         minSdk = 33
         targetSdk = 33
         versionCode = 1
