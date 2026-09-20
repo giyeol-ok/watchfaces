@@ -19,7 +19,7 @@
       <Image resource="tourbillon_cage_aod" />
       <Variant mode="AMBIENT" target="alpha" value="255" />
     </PartImage>
-    <PartImage x="174" y="288" width="214" height="41" alpha="0">
+    <PartImage x="174" y="290" width="214" height="37" alpha="0">
       <Image resource="tourbillon_bridge_aod" />
       <Variant mode="AMBIENT" target="alpha" value="255" />
     </PartImage>
@@ -33,7 +33,7 @@
     </AnalogClock>
 
     <!-- Tourbillon bridge: fixed, drawn over the rotating cage. -->
-    <PartImage x="174" y="288" width="214" height="41">
+    <PartImage x="174" y="290" width="214" height="37">
       <Image resource="tourbillon_bridge" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
     </PartImage>
