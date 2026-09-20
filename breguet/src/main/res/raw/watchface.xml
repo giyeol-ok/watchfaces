@@ -70,5 +70,10 @@
       <HourHand resource="hour_hand" x="213" y="73" width="35" height="171" pivotX="0.42879" pivotY="0.89827" />
       <MinuteHand resource="minute_hand" x="211" y="42" width="28" height="198" pivotX="0.4667" pivotY="0.9196" />
     </AnalogClock>
+
+    <!-- Center hub cap: covers the hand pivots, drawn on top of all hands. -->
+    <PartImage x="207" y="207" width="36" height="36">
+      <Image resource="center_cap" />
+    </PartImage>
   </Scene>
 </WatchFace>
