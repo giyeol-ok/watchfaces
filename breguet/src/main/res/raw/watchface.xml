@@ -13,12 +13,13 @@
       <Variant mode="AMBIENT" target="alpha" value="255" />
     </PartImage>
 
-    <!-- Tourbillon cage: rotates once per minute, 6 degrees per second. -->
-    <PartImage x="191" y="216" width="186" height="186" pivotX="0.5" pivotY="0.5">
-      <Image resource="tourbillon_cage" />
-      <Transform target="angle" value="[SECOND]*6" />
-      <Variant mode="AMBIENT" target="alpha" value="0" />
-    </PartImage>
+    <!-- Tourbillon cage: rotates once per minute via a continuous, device-synced sweep. -->
+    <AnalogClock x="0" y="0" width="450" height="450">
+      <SecondHand resource="tourbillon_cage" x="191" y="216" width="186" height="186" pivotX="0.5" pivotY="0.5">
+        <Sweep frequency="SYNC_TO_DEVICE" />
+        <Variant mode="AMBIENT" target="alpha" value="0" />
+      </SecondHand>
+    </AnalogClock>
 
     <!-- Tourbillon bridge: fixed, drawn over the rotating cage. -->
     <PartImage x="159" y="289" width="243" height="47">
