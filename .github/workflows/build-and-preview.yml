@@ -321,6 +321,8 @@ jobs:
 
       - name: Publish previews into the repo for one-tap viewing
         if: always()
+        env:
+          TARGET_BRANCH: ${{ github.ref_name }}
         run: |
           shopt -s nullglob
           files=(previews/*.png)
@@ -338,6 +340,11 @@ jobs:
             echo "Previews unchanged, nothing to commit."
           else
             git commit -m "Update moonswatch-snoopy AOD/moon-phase previews [skip ci]"
-            git pull --rebase origin main
-            git push origin HEAD:main
+            # Publish back to whichever branch triggered this run, not a
+            # hard-coded "main" — rebasing onto main here previously blew up
+            # with add/add conflicts on every file that differs between a
+            # long-lived feature branch and main, even though this commit
+            # only touches the preview PNGs.
+            git pull --rebase origin "$TARGET_BRANCH"
+            git push origin "HEAD:$TARGET_BRANCH"
           fi
