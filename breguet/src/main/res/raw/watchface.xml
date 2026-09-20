@@ -43,7 +43,7 @@
       <Localization locales="en_US" />
       <Text align="CENTER" verticalAlign="CENTER" isAutoSize="true" maxLines="1">
         <Font family="libre_baskerville_regular" size="20" minSize="10"
-              letterSpacing="-0.1" color="#141d33" width="CONDENSED">
+              letterSpacing="-0.1" color="#141d33" width="EXTRA_CONDENSED">
           <Upper><Template>%s<Parameter expression="[DAY_OF_WEEK_S]" /></Template></Upper>
         </Font>
       </Text>
@@ -54,7 +54,7 @@
       <Localization locales="en_US" />
       <Text align="CENTER" verticalAlign="CENTER" isAutoSize="true" maxLines="1">
         <Font family="libre_baskerville_regular" size="20" minSize="10"
-              letterSpacing="-0.1" color="#141d33" width="CONDENSED">
+              letterSpacing="-0.1" color="#141d33" width="EXTRA_CONDENSED">
           <Upper><Template>%s<Parameter expression="[MONTH_S]" /></Template></Upper>
         </Font>
       </Text>
