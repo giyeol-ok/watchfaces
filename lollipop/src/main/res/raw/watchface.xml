@@ -147,8 +147,8 @@
         </ListOption>
         <ListOption id="4">
           <AnalogClock x="0" y="0" width="450" height="450">
-            <MinuteHand resource="minute_hand_lime_blue" x="212" y="103" width="24" height="136" pivotX="0.5418" pivotY="0.9126" />
-            <HourHand resource="hour_hand_lime_blue" x="212" y="140" width="24" height="99" pivotX="0.5596" pivotY="0.8555" />
+            <MinuteHand resource="minute_hand_lime_blue" x="213" y="103" width="24" height="136" pivotX="0.5418" pivotY="0.9126" />
+            <HourHand resource="hour_hand_lime_blue" x="213" y="140" width="24" height="99" pivotX="0.5596" pivotY="0.8555" />
           </AnalogClock>
         </ListOption>
         <ListOption id="5">
