@@ -13,16 +13,27 @@
       <Variant mode="AMBIENT" target="alpha" value="255" />
     </PartImage>
 
+    <!-- Ambient-only: the tourbillon window is a cutout in the dial art, so a
+         stopped, dimmed cage/bridge fill it in AOD instead of showing black. -->
+    <PartImage x="199" y="227" width="164" height="164" alpha="0">
+      <Image resource="tourbillon_cage_aod" />
+      <Variant mode="AMBIENT" target="alpha" value="255" />
+    </PartImage>
+    <PartImage x="174" y="288" width="214" height="41" alpha="0">
+      <Image resource="tourbillon_bridge_aod" />
+      <Variant mode="AMBIENT" target="alpha" value="255" />
+    </PartImage>
+
     <!-- Tourbillon cage: rotates once per minute via a continuous, device-synced sweep. -->
     <AnalogClock x="0" y="0" width="450" height="450">
-      <SecondHand resource="tourbillon_cage" x="191" y="216" width="186" height="186" pivotX="0.5" pivotY="0.5">
+      <SecondHand resource="tourbillon_cage" x="199" y="227" width="164" height="164" pivotX="0.5" pivotY="0.5">
         <Sweep frequency="SYNC_TO_DEVICE" />
         <Variant mode="AMBIENT" target="alpha" value="0" />
       </SecondHand>
     </AnalogClock>
 
     <!-- Tourbillon bridge: fixed, drawn over the rotating cage. -->
-    <PartImage x="159" y="289" width="243" height="47">
+    <PartImage x="174" y="288" width="214" height="41">
       <Image resource="tourbillon_bridge" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
     </PartImage>
@@ -56,8 +67,8 @@
     </PartImage>
 
     <AnalogClock x="0" y="0" width="450" height="450">
-      <HourHand resource="hour_hand" x="210" y="71" width="35" height="171" pivotX="0.42879" pivotY="0.89827" />
-      <MinuteHand resource="minute_hand" x="214" y="46" width="28" height="198" pivotX="0.4667" pivotY="0.9196" />
+      <HourHand resource="hour_hand" x="213" y="73" width="35" height="171" pivotX="0.42879" pivotY="0.89827" />
+      <MinuteHand resource="minute_hand" x="211" y="42" width="28" height="198" pivotX="0.4667" pivotY="0.9196" />
     </AnalogClock>
   </Scene>
 </WatchFace>
