@@ -42,7 +42,7 @@
     <PartText x="78" y="76" width="33" height="20">
       <Localization locales="en_US" />
       <Text align="CENTER" verticalAlign="CENTER" isAutoSize="true" maxLines="1">
-        <Font family="libre_baskerville_regular" size="27" minSize="10"
+        <Font family="libre_baskerville_regular" size="28" minSize="10"
               letterSpacing="-0.16" color="#141d33" width="EXTRA_CONDENSED">
           <Upper><Template>%s<Parameter expression="[DAY_OF_WEEK_S]" /></Template></Upper>
         </Font>
@@ -53,7 +53,7 @@
     <PartText x="338" y="75" width="36" height="22">
       <Localization locales="en_US" />
       <Text align="CENTER" verticalAlign="CENTER" isAutoSize="true" maxLines="1">
-        <Font family="libre_baskerville_regular" size="27" minSize="10"
+        <Font family="libre_baskerville_regular" size="28" minSize="10"
               letterSpacing="-0.1" color="#141d33" width="EXTRA_CONDENSED">
           <Upper><Template>%s<Parameter expression="[MONTH_S]" /></Template></Upper>
         </Font>
