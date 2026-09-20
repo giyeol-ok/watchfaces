@@ -50,7 +50,7 @@
     </PartText>
 
     <!-- Month window, 1-2 o'clock. Locale fixed to English so it's always a 3-letter abbreviation. -->
-    <PartText x="339" y="75" width="36" height="22">
+    <PartText x="338" y="75" width="36" height="22">
       <Localization locales="en_US" />
       <Text align="CENTER" verticalAlign="CENTER" isAutoSize="true" maxLines="1">
         <Font family="libre_baskerville_regular" size="20" minSize="10"
