@@ -67,8 +67,8 @@
     </PartImage>
 
     <AnalogClock x="0" y="0" width="450" height="450">
-      <HourHand resource="hour_hand" x="213" y="73" width="35" height="171" pivotX="0.42879" pivotY="0.89827" />
-      <MinuteHand resource="minute_hand" x="211" y="42" width="28" height="198" pivotX="0.4667" pivotY="0.9196" />
+      <HourHand resource="hour_hand" x="210" y="71" width="35" height="171" pivotX="0.42879" pivotY="0.89827" />
+      <MinuteHand resource="minute_hand" x="212" y="43" width="28" height="198" pivotX="0.4667" pivotY="0.9196" />
     </AnalogClock>
   </Scene>
 </WatchFace>
