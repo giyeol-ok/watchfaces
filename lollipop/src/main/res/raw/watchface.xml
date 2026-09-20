@@ -165,7 +165,7 @@
         </ListOption>
         <ListOption id="7">
           <AnalogClock x="0" y="0" width="450" height="450">
-            <SecondHand resource="second_hand_pink_yellow_cyan" x="218" y="256" width="13" height="44" pivotX="0.5291" pivotY="0.9008">
+            <SecondHand resource="second_hand_pink_yellow_cyan" x="218" y="259" width="13" height="44" pivotX="0.5291" pivotY="0.9008">
               <Sweep frequency="SYNC_TO_DEVICE" />
               <Variant mode="AMBIENT" target="alpha" value="0" />
             </SecondHand>
