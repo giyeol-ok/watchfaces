@@ -40,7 +40,7 @@
 
     <!-- Weekday window, 10-11 o'clock. Locale fixed to English so it's always a 3-letter abbreviation.
          Box widened to match the printed white window in the dial art (was 33x20, much
-         narrower than the ~50x32 window) -- isAutoSize was shrinking the text back down to
+         narrower than the ~50x32 window); isAutoSize was shrinking the text back down to
          fit the old narrow box, silently undoing the font-size increase on real devices. -->
     <PartText x="69" y="75" width="46" height="28">
       <Localization locales="en_US" />
