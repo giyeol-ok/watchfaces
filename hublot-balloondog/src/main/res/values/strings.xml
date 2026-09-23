@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
   <string name="watch_face_name">Hublot Balloon Dog</string>
+  <string name="dial_color_label">Dial color</string>
+  <string name="dial_red_label">Red</string>
+  <string name="dial_blue_label">Blue</string>
+  <string name="dial_silver_label">Silver</string>
 </resources>
