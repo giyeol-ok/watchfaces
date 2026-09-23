@@ -133,6 +133,31 @@
           </PartImage>
         </ListOption>
     </ListConfiguration>
+    <!-- Date window: only the pinkwg dial (option 0) has a date box printed on it. -->
+    <ListConfiguration id="dial_color">
+        <ListOption id="0">
+          <PartText x="349" y="212" width="31" height="23" pivotX="0.5" pivotY="0.5">
+            <Text align="CENTER">
+              <Font family="roboto_regular" size="16" weight="BOLD" slant="NORMAL" color="#000000">
+                <Template>%d<Parameter expression="[DAY]" /></Template>
+              </Font>
+            </Text>
+            <Variant mode="AMBIENT" target="alpha" value="0" />
+          </PartText>
+        </ListOption>
+    </ListConfiguration>
+    <ListConfiguration id="dial_color">
+        <ListOption id="0">
+          <PartText x="349" y="212" width="31" height="23" pivotX="0.5" pivotY="0.5" alpha="0">
+            <Text align="CENTER">
+              <Font family="roboto_regular" size="16" weight="BOLD" slant="NORMAL" color="#FFFFFF">
+                <Template>%d<Parameter expression="[DAY]" /></Template>
+              </Font>
+            </Text>
+            <Variant mode="AMBIENT" target="alpha" value="255" />
+          </PartText>
+        </ListOption>
+    </ListConfiguration>
     <ListConfiguration id="hand_color">
         <ListOption id="0">
           <AnalogClock x="0" y="0" width="450" height="450">
