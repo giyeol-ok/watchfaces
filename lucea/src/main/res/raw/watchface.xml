@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WatchFace width="450" height="450">
+  <Metadata key="PREVIEW_TIME" value="10:09:32" />
+  <Metadata key="CLOCK_TYPE" value="ANALOG" />
+  <UserConfigurations>
+    <ListConfiguration id="dial_color" displayName="dial_color_label" screenReaderText="dial_color_label" defaultValue="1">
+        <ListOption id="0" displayName="dial_pinkwg_label" screenReaderText="dial_pinkwg_label" />
+        <ListOption id="1" displayName="dial_whitewg_label" screenReaderText="dial_whitewg_label" />
+        <ListOption id="2" displayName="dial_whiterg_diamond_label" screenReaderText="dial_whiterg_diamond_label" />
+        <ListOption id="3" displayName="dial_malachite_rg_label" screenReaderText="dial_malachite_rg_label" />
+        <ListOption id="4" displayName="dial_teal_steel_label" screenReaderText="dial_teal_steel_label" />
+        <ListOption id="5" displayName="dial_white_steel_label" screenReaderText="dial_white_steel_label" />
+        <ListOption id="6" displayName="dial_pink_steel_label" screenReaderText="dial_pink_steel_label" />
+        <ListOption id="7" displayName="dial_whiterg_thin_label" screenReaderText="dial_whiterg_thin_label" />
+        <ListOption id="8" displayName="dial_whiterg_thin_blackbg_label" screenReaderText="dial_whiterg_thin_blackbg_label" />
+    </ListConfiguration>
+    <ListConfiguration id="hand_color" displayName="hand_color_label" screenReaderText="hand_color_label" defaultValue="0">
+        <ListOption id="0" displayName="hand_rosegold_label" screenReaderText="hand_rosegold_label" />
+        <ListOption id="1" displayName="hand_silver_label" screenReaderText="hand_silver_label" />
+    </ListConfiguration>
+  </UserConfigurations>
+  <Scene>
+    <ListConfiguration id="dial_color">
+        <ListOption id="0">
+          <PartImage x="0" y="0" width="450" height="450">
+            <Image resource="dial_pinkwg" />
+            <Variant mode="AMBIENT" target="alpha" value="0" />
+          </PartImage>
+        </ListOption>
+        <ListOption id="1">
+          <PartImage x="0" y="0" width="450" height="450">
+            <Image resource="dial_whitewg" />
+            <Variant mode="AMBIENT" target="alpha" value="0" />
+          </PartImage>
+        </ListOption>
+        <ListOption id="2">
+          <PartImage x="0" y="0" width="450" height="450">
+            <Image resource="dial_whiterg_diamond" />
+            <Variant mode="AMBIENT" target="alpha" value="0" />
+          </PartImage>
+        </ListOption>
+        <ListOption id="3">
+          <PartImage x="0" y="0" width="450" height="450">
+            <Image resource="dial_malachite_rg" />
+            <Variant mode="AMBIENT" target="alpha" value="0" />
+          </PartImage>
+        </ListOption>
+        <ListOption id="4">
+          <PartImage x="0" y="0" width="450" height="450">
+            <Image resource="dial_teal_steel" />
+            <Variant mode="AMBIENT" target="alpha" value="0" />
+          </PartImage>
+        </ListOption>
+        <ListOption id="5">
+          <PartImage x="0" y="0" width="450" height="450">
+            <Image resource="dial_white_steel" />
+            <Variant mode="AMBIENT" target="alpha" value="0" />
+          </PartImage>
+        </ListOption>
+        <ListOption id="6">
+          <PartImage x="0" y="0" width="450" height="450">
+            <Image resource="dial_pink_steel" />
+            <Variant mode="AMBIENT" target="alpha" value="0" />
+          </PartImage>
+        </ListOption>
+        <ListOption id="7">
+          <PartImage x="0" y="0" width="450" height="450">
+            <Image resource="dial_whiterg_thin" />
+            <Variant mode="AMBIENT" target="alpha" value="0" />
+          </PartImage>
+        </ListOption>
+        <ListOption id="8">
+          <PartImage x="0" y="0" width="450" height="450">
+            <Image resource="dial_whiterg_thin_blackbg" />
+            <Variant mode="AMBIENT" target="alpha" value="0" />
+          </PartImage>
+        </ListOption>
+    </ListConfiguration>
+    <!-- Dimmed, low-power dial shown only in ambient/AOD mode. -->
+    <ListConfiguration id="dial_color">
+        <ListOption id="0">
+          <PartImage x="0" y="0" width="450" height="450" alpha="0">
+            <Image resource="dial_pinkwg_aod" />
+            <Variant mode="AMBIENT" target="alpha" value="255" />
+          </PartImage>
+        </ListOption>
+        <ListOption id="1">
+          <PartImage x="0" y="0" width="450" height="450" alpha="0">
+            <Image resource="dial_whitewg_aod" />
+            <Variant mode="AMBIENT" target="alpha" value="255" />
+          </PartImage>
+        </ListOption>
+        <ListOption id="2">
+          <PartImage x="0" y="0" width="450" height="450" alpha="0">
+            <Image resource="dial_whiterg_diamond_aod" />
+            <Variant mode="AMBIENT" target="alpha" value="255" />
+          </PartImage>
+        </ListOption>
+        <ListOption id="3">
+          <PartImage x="0" y="0" width="450" height="450" alpha="0">
+            <Image resource="dial_malachite_rg_aod" />
+            <Variant mode="AMBIENT" target="alpha" value="255" />
+          </PartImage>
+        </ListOption>
+        <ListOption id="4">
+          <PartImage x="0" y="0" width="450" height="450" alpha="0">
+            <Image resource="dial_teal_steel_aod" />
+            <Variant mode="AMBIENT" target="alpha" value="255" />
+          </PartImage>
+        </ListOption>
+        <ListOption id="5">
+          <PartImage x="0" y="0" width="450" height="450" alpha="0">
+            <Image resource="dial_white_steel_aod" />
+            <Variant mode="AMBIENT" target="alpha" value="255" />
+          </PartImage>
+        </ListOption>
+        <ListOption id="6">
+          <PartImage x="0" y="0" width="450" height="450" alpha="0">
+            <Image resource="dial_pink_steel_aod" />
+            <Variant mode="AMBIENT" target="alpha" value="255" />
+          </PartImage>
+        </ListOption>
+        <ListOption id="7">
+          <PartImage x="0" y="0" width="450" height="450" alpha="0">
+            <Image resource="dial_whiterg_thin_aod" />
+            <Variant mode="AMBIENT" target="alpha" value="255" />
+          </PartImage>
+        </ListOption>
+        <ListOption id="8">
+          <PartImage x="0" y="0" width="450" height="450" alpha="0">
+            <Image resource="dial_whiterg_thin_blackbg_aod" />
+            <Variant mode="AMBIENT" target="alpha" value="255" />
+          </PartImage>
+        </ListOption>
+    </ListConfiguration>
+    <ListConfiguration id="hand_color">
+        <ListOption id="0">
+          <AnalogClock x="0" y="0" width="450" height="450">
+            <HourHand resource="hour_hand_rosegold" x="199" y="130" width="38" height="108" pivotX="0.6816" pivotY="0.8798" />
+            <MinuteHand resource="minute_hand_rosegold" x="213" y="80" width="26" height="158" pivotX="0.4778" pivotY="0.9171" />
+            <SecondHand resource="second_hand_rosegold" x="214" y="75" width="22" height="213" pivotX="0.4949" pivotY="0.7043">
+              <Sweep frequency="SYNC_TO_DEVICE" />
+              <Variant mode="AMBIENT" target="alpha" value="0" />
+            </SecondHand>
+          </AnalogClock>
+        </ListOption>
+        <ListOption id="1">
+          <AnalogClock x="0" y="0" width="450" height="450">
+            <HourHand resource="hour_hand_silver" x="199" y="130" width="38" height="108" pivotX="0.6816" pivotY="0.8798" />
+            <MinuteHand resource="minute_hand_silver" x="213" y="80" width="26" height="158" pivotX="0.4778" pivotY="0.9171" />
+            <SecondHand resource="second_hand_silver" x="214" y="75" width="22" height="213" pivotX="0.4949" pivotY="0.7043">
+              <Sweep frequency="SYNC_TO_DEVICE" />
+              <Variant mode="AMBIENT" target="alpha" value="0" />
+            </SecondHand>
+          </AnalogClock>
+        </ListOption>
+    </ListConfiguration>
+  </Scene>
+</WatchFace>
