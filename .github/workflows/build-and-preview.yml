@@ -19,6 +19,7 @@ jobs:
       rolex-deepsea2: ${{ steps.filter.outputs.rolex-deepsea2 }}
       lollipop: ${{ steps.filter.outputs.lollipop }}
       breguet: ${{ steps.filter.outputs.breguet }}
+      hublot-balloondog: ${{ steps.filter.outputs.hublot-balloondog }}
     steps:
       - uses: actions/checkout@v4
       - uses: dorny/paths-filter@v3
@@ -67,6 +68,43 @@ jobs:
               - 'build.gradle.kts'
               - 'settings.gradle.kts'
               - 'gradle/**'
+            hublot-balloondog:
+              - 'hublot-balloondog/**'
+              - '.github/workflows/build-and-preview.yml'
+              - '.github/scripts/**'
+              - 'build.gradle.kts'
+              - 'settings.gradle.kts'
+              - 'gradle/**'
+
+  build-hublot-balloondog:
+    needs: changes
+    if: needs.changes.outputs.hublot-balloondog == 'true'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v4
+
+      - name: Set up Java 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+          cache: gradle
+
+      - name: Make Gradle executable
+        run: chmod +x gradlew
+
+      - name: Build debug APK
+        run: ./gradlew :hublot-balloondog:assembleDebug
+
+      - name: Upload installable APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: hublot-balloondog-APK
+          path: hublot-balloondog/build/outputs/apk/debug/*.apk
+          if-no-files-found: error
 
   build-breguet:
     needs: changes
