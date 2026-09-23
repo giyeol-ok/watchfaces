@@ -24,15 +24,16 @@
       </Text>
     </PartText>
 
-    <!-- Hands sized at 90% and declared second-under-minute-under-hour so
-         the stacking (paint) order puts the hour hand on top. -->
+    <!-- Hands sized at another 90% (81% of original) and declared
+         hour-under-minute-under-second so the stacking (paint) order puts
+         the second hand on top. -->
     <AnalogClock x="0" y="0" width="450" height="450">
-      <SecondHand resource="second_hand" x="198" y="41" width="58" height="269" pivotX="0.4683" pivotY="0.6852">
+      <HourHand resource="hour_hand" x="196" y="120" width="58" height="134" pivotX="0.4982" pivotY="0.7839" />
+      <MinuteHand resource="minute_hand" x="207" y="76" width="36" height="167" pivotX="0.4963" pivotY="0.8918" />
+      <SecondHand resource="second_hand" x="201" y="59" width="52" height="242" pivotX="0.4683" pivotY="0.6852">
         <Sweep frequency="SYNC_TO_DEVICE" />
         <Variant mode="AMBIENT" target="alpha" value="0" />
       </SecondHand>
-      <MinuteHand resource="minute_hand" x="205" y="59" width="40" height="186" pivotX="0.4963" pivotY="0.8918" />
-      <HourHand resource="hour_hand" x="193" y="108" width="64" height="149" pivotX="0.4982" pivotY="0.7839" />
     </AnalogClock>
   </Scene>
 </WatchFace>
