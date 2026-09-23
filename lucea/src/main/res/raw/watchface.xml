@@ -138,7 +138,7 @@
         <ListOption id="0">
           <PartText x="349" y="212" width="31" height="23" pivotX="0.5" pivotY="0.5">
             <Text align="CENTER">
-              <Font family="roboto_regular" size="16" weight="BOLD" slant="NORMAL" color="#000000">
+              <Font family="roboto_regular" size="18" weight="BOLD" slant="NORMAL" color="#000000">
                 <Template>%d<Parameter expression="[DAY]" /></Template>
               </Font>
             </Text>
@@ -150,7 +150,7 @@
         <ListOption id="0">
           <PartText x="349" y="212" width="31" height="23" pivotX="0.5" pivotY="0.5" alpha="0">
             <Text align="CENTER">
-              <Font family="roboto_regular" size="16" weight="BOLD" slant="NORMAL" color="#FFFFFF">
+              <Font family="roboto_regular" size="18" weight="BOLD" slant="NORMAL" color="#FFFFFF">
                 <Template>%d<Parameter expression="[DAY]" /></Template>
               </Font>
             </Text>
