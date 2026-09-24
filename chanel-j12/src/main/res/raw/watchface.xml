@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WatchFace width="450" height="450">
+  <Metadata key="PREVIEW_TIME" value="10:09:32" />
+  <Metadata key="CLOCK_TYPE" value="ANALOG" />
+  <UserConfigurations>
+    <ListConfiguration id="dial_color" displayName="dial_color_label" screenReaderText="dial_color_label" defaultValue="0">
+        <ListOption id="0" displayName="dial_black_diamond_label" screenReaderText="dial_black_diamond_label" />
+        <ListOption id="1" displayName="dial_black_plain_diamond_label" screenReaderText="dial_black_plain_diamond_label" />
+        <ListOption id="2" displayName="dial_black_plain_numeral_label" screenReaderText="dial_black_plain_numeral_label" />
+        <ListOption id="3" displayName="dial_white_diamond_label" screenReaderText="dial_white_diamond_label" />
+        <ListOption id="4" displayName="dial_white_plain_diamond_label" screenReaderText="dial_white_plain_diamond_label" />
+        <ListOption id="5" displayName="dial_white_plain_numeral_label" screenReaderText="dial_white_plain_numeral_label" />
+    </ListConfiguration>
+    <ListConfiguration id="hand_color" displayName="hand_color_label" screenReaderText="hand_color_label" defaultValue="0">
+        <ListOption id="0" displayName="hand_white_label" screenReaderText="hand_white_label" />
+        <ListOption id="1" displayName="hand_black_label" screenReaderText="hand_black_label" />
+    </ListConfiguration>
+  </UserConfigurations>
+  <Scene>
+    <!-- Each dial's own artwork is nudged a few px within its 450x450 canvas
+         to align the printed dial face with the bezel/hands (per-colorway,
+         confirmed against the reference renders). -->
+    <ListConfiguration id="dial_color">
+        <ListOption id="0">
+          <PartImage x="0" y="0" width="450" height="450">
+            <Image resource="dial_black_diamond" />
+            <Variant mode="AMBIENT" target="alpha" value="0" />
+          </PartImage>
+        </ListOption>
+        <ListOption id="1">
+          <PartImage x="0" y="0" width="450" height="450">
+            <Image resource="dial_black_plain_diamond" />
+            <Variant mode="AMBIENT" target="alpha" value="0" />
+          </PartImage>
+        </ListOption>
+        <ListOption id="2">
+          <PartImage x="0" y="0" width="450" height="450">
+            <Image resource="dial_black_plain_numeral" />
+            <Variant mode="AMBIENT" target="alpha" value="0" />
+          </PartImage>
+        </ListOption>
+        <ListOption id="3">
+          <PartImage x="0" y="0" width="450" height="450">
+            <Image resource="dial_white_diamond" />
+            <Variant mode="AMBIENT" target="alpha" value="0" />
+          </PartImage>
+        </ListOption>
+        <ListOption id="4">
+          <PartImage x="0" y="0" width="450" height="450">
+            <Image resource="dial_white_plain_diamond" />
+            <Variant mode="AMBIENT" target="alpha" value="0" />
+          </PartImage>
+        </ListOption>
+        <ListOption id="5">
+          <PartImage x="0" y="0" width="450" height="450">
+            <Image resource="dial_white_plain_numeral" />
+            <Variant mode="AMBIENT" target="alpha" value="0" />
+          </PartImage>
+        </ListOption>
+    </ListConfiguration>
+    <!-- Dimmed, low-power dial shown only in ambient/AOD mode. Same per-option
+         y-nudge as the active art above, since it's the same artwork. -->
+    <ListConfiguration id="dial_color">
+        <ListOption id="0">
+          <PartImage x="0" y="0" width="450" height="450" alpha="0">
+            <Image resource="dial_black_diamond_aod" />
+            <Variant mode="AMBIENT" target="alpha" value="255" />
+          </PartImage>
+        </ListOption>
+        <ListOption id="1">
+          <PartImage x="0" y="0" width="450" height="450" alpha="0">
+            <Image resource="dial_black_plain_diamond_aod" />
+            <Variant mode="AMBIENT" target="alpha" value="255" />
+          </PartImage>
+        </ListOption>
+        <ListOption id="2">
+          <PartImage x="0" y="0" width="450" height="450" alpha="0">
+            <Image resource="dial_black_plain_numeral_aod" />
+            <Variant mode="AMBIENT" target="alpha" value="255" />
+          </PartImage>
+        </ListOption>
+        <ListOption id="3">
+          <PartImage x="0" y="0" width="450" height="450" alpha="0">
+            <Image resource="dial_white_diamond_aod" />
+            <Variant mode="AMBIENT" target="alpha" value="255" />
+          </PartImage>
+        </ListOption>
+        <ListOption id="4">
+          <PartImage x="0" y="0" width="450" height="450" alpha="0">
+            <Image resource="dial_white_plain_diamond_aod" />
+            <Variant mode="AMBIENT" target="alpha" value="255" />
+          </PartImage>
+        </ListOption>
+        <ListOption id="5">
+          <PartImage x="0" y="0" width="450" height="450" alpha="0">
+            <Image resource="dial_white_plain_numeral_aod" />
+            <Variant mode="AMBIENT" target="alpha" value="255" />
+          </PartImage>
+        </ListOption>
+    </ListConfiguration>
+    <!-- Date window: tilted ~45 degrees between 4 and 5 o'clock in the dial
+         art. Its exact pixel position varies a few px per colorway (each
+         dial's own y-nudge above, plus small per-dial fine-tuning against
+         the reference renders), so it's scoped per dial_color option rather
+         than shared. Each option carries the same pair as before: black
+         text in active mode, a white variant that takes over in ambient
+         since the window art darkens along with the AOD dial. -->
+    <ListConfiguration id="dial_color">
+        <ListOption id="0">
+          <PartText x="292" y="303" width="32" height="24" pivotX="0.5" pivotY="0.5">
+            <Transform target="angle" value="-45" />
+            <Text align="CENTER" verticalAlign="CENTER">
+              <Font family="roboto_regular" size="20" weight="NORMAL" slant="NORMAL" color="#000000">
+                <Template>%d<Parameter expression="[DAY]" /></Template>
+              </Font>
+            </Text>
+            <Variant mode="AMBIENT" target="alpha" value="0" />
+          </PartText>
+          <PartText x="292" y="303" width="32" height="24" pivotX="0.5" pivotY="0.5" alpha="0">
+            <Transform target="angle" value="-45" />
+            <Text align="CENTER" verticalAlign="CENTER">
+              <Font family="roboto_regular" size="20" weight="NORMAL" slant="NORMAL" color="#FFFFFF">
+                <Template>%d<Parameter expression="[DAY]" /></Template>
+              </Font>
+            </Text>
+            <Variant mode="AMBIENT" target="alpha" value="255" />
+          </PartText>
+        </ListOption>
+        <ListOption id="1">
+          <PartText x="292" y="299" width="32" height="24" pivotX="0.5" pivotY="0.5">
+            <Transform target="angle" value="-45" />
+            <Text align="CENTER" verticalAlign="CENTER">
+              <Font family="roboto_regular" size="20" weight="NORMAL" slant="NORMAL" color="#000000">
+                <Template>%d<Parameter expression="[DAY]" /></Template>
+              </Font>
+            </Text>
+            <Variant mode="AMBIENT" target="alpha" value="0" />
+          </PartText>
+          <PartText x="292" y="299" width="32" height="24" pivotX="0.5" pivotY="0.5" alpha="0">
+            <Transform target="angle" value="-45" />
+            <Text align="CENTER" verticalAlign="CENTER">
+              <Font family="roboto_regular" size="20" weight="NORMAL" slant="NORMAL" color="#FFFFFF">
+                <Template>%d<Parameter expression="[DAY]" /></Template>
+              </Font>
+            </Text>
+            <Variant mode="AMBIENT" target="alpha" value="255" />
+          </PartText>
+        </ListOption>
+        <ListOption id="2">
+          <PartText x="293" y="299" width="32" height="24" pivotX="0.5" pivotY="0.5">
+            <Transform target="angle" value="-45" />
+            <Text align="CENTER" verticalAlign="CENTER">
+              <Font family="roboto_regular" size="20" weight="NORMAL" slant="NORMAL" color="#000000">
+                <Template>%d<Parameter expression="[DAY]" /></Template>
+              </Font>
+            </Text>
+            <Variant mode="AMBIENT" target="alpha" value="0" />
+          </PartText>
+          <PartText x="293" y="299" width="32" height="24" pivotX="0.5" pivotY="0.5" alpha="0">
+            <Transform target="angle" value="-45" />
+            <Text align="CENTER" verticalAlign="CENTER">
+              <Font family="roboto_regular" size="20" weight="NORMAL" slant="NORMAL" color="#FFFFFF">
+                <Template>%d<Parameter expression="[DAY]" /></Template>
+              </Font>
+            </Text>
+            <Variant mode="AMBIENT" target="alpha" value="255" />
+          </PartText>
+        </ListOption>
+        <ListOption id="3">
+          <PartText x="292" y="302" width="32" height="24" pivotX="0.5" pivotY="0.5">
+            <Transform target="angle" value="-45" />
+            <Text align="CENTER" verticalAlign="CENTER">
+              <Font family="roboto_regular" size="20" weight="NORMAL" slant="NORMAL" color="#000000">
+                <Template>%d<Parameter expression="[DAY]" /></Template>
+              </Font>
+            </Text>
+            <Variant mode="AMBIENT" target="alpha" value="0" />
+          </PartText>
+          <PartText x="292" y="302" width="32" height="24" pivotX="0.5" pivotY="0.5" alpha="0">
+            <Transform target="angle" value="-45" />
+            <Text align="CENTER" verticalAlign="CENTER">
+              <Font family="roboto_regular" size="20" weight="NORMAL" slant="NORMAL" color="#FFFFFF">
+                <Template>%d<Parameter expression="[DAY]" /></Template>
+              </Font>
+            </Text>
+            <Variant mode="AMBIENT" target="alpha" value="255" />
+          </PartText>
+        </ListOption>
+        <ListOption id="4">
+          <PartText x="291" y="299" width="32" height="24" pivotX="0.5" pivotY="0.5">
+            <Transform target="angle" value="-45" />
+            <Text align="CENTER" verticalAlign="CENTER">
+              <Font family="roboto_regular" size="20" weight="NORMAL" slant="NORMAL" color="#000000">
+                <Template>%d<Parameter expression="[DAY]" /></Template>
+              </Font>
+            </Text>
+            <Variant mode="AMBIENT" target="alpha" value="0" />
+          </PartText>
+          <PartText x="291" y="299" width="32" height="24" pivotX="0.5" pivotY="0.5" alpha="0">
+            <Transform target="angle" value="-45" />
+            <Text align="CENTER" verticalAlign="CENTER">
+              <Font family="roboto_regular" size="20" weight="NORMAL" slant="NORMAL" color="#FFFFFF">
+                <Template>%d<Parameter expression="[DAY]" /></Template>
+              </Font>
+            </Text>
+            <Variant mode="AMBIENT" target="alpha" value="255" />
+          </PartText>
+        </ListOption>
+        <ListOption id="5">
+          <PartText x="292" y="299" width="32" height="24" pivotX="0.5" pivotY="0.5">
+            <Transform target="angle" value="-45" />
+            <Text align="CENTER" verticalAlign="CENTER">
+              <Font family="roboto_regular" size="20" weight="NORMAL" slant="NORMAL" color="#000000">
+                <Template>%d<Parameter expression="[DAY]" /></Template>
+              </Font>
+            </Text>
+            <Variant mode="AMBIENT" target="alpha" value="0" />
+          </PartText>
+          <PartText x="292" y="299" width="32" height="24" pivotX="0.5" pivotY="0.5" alpha="0">
+            <Transform target="angle" value="-45" />
+            <Text align="CENTER" verticalAlign="CENTER">
+              <Font family="roboto_regular" size="20" weight="NORMAL" slant="NORMAL" color="#FFFFFF">
+                <Template>%d<Parameter expression="[DAY]" /></Template>
+              </Font>
+            </Text>
+            <Variant mode="AMBIENT" target="alpha" value="255" />
+          </PartText>
+        </ListOption>
+    </ListConfiguration>
+    <!-- Hands: 15% longer than the initial fit, then this dial's hour hand
+         10% thinner and minute/second 10% thinner and a further 10% longer,
+         pivots kept anchored to the same on-dial center throughout. -->
+    <ListConfiguration id="hand_color">
+        <ListOption id="0">
+          <AnalogClock x="0" y="0" width="450" height="450">
+            <HourHand resource="hour_hand_white" x="212" y="140" width="29" height="102" pivotX="0.4981" pivotY="0.8457" />
+            <MinuteHand resource="minute_hand_white" x="207" y="80" width="38" height="174" pivotX="0.5004" pivotY="0.8365" />
+            <SecondHand resource="second_hand_white" x="214" y="171" width="22" height="206" pivotX="0.485" pivotY="0.265">
+              <Sweep frequency="SYNC_TO_DEVICE" />
+              <Variant mode="AMBIENT" target="alpha" value="0" />
+            </SecondHand>
+          </AnalogClock>
+        </ListOption>
+        <ListOption id="1">
+          <AnalogClock x="0" y="0" width="450" height="450">
+            <HourHand resource="hour_hand_black" x="212" y="140" width="29" height="102" pivotX="0.4981" pivotY="0.8457" />
+            <MinuteHand resource="minute_hand_black" x="207" y="80" width="38" height="174" pivotX="0.5004" pivotY="0.8365" />
+            <SecondHand resource="second_hand_black" x="214" y="171" width="22" height="206" pivotX="0.485" pivotY="0.265">
+              <Sweep frequency="SYNC_TO_DEVICE" />
+              <Variant mode="AMBIENT" target="alpha" value="0" />
+            </SecondHand>
+          </AnalogClock>
+        </ListOption>
+    </ListConfiguration>
+  </Scene>
+</WatchFace>

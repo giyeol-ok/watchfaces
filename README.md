@@ -75,3 +75,8 @@ in a given push.
   hands from centre plus a date hand pointing at the inner 1-31 date ring.
   The current weekday and month are shown as 3-letter abbreviations in the
   dial's two white windows (10-11 o'clock and 1-2 o'clock).
+- `chanel-j12/` - Chanel J12-styled ceramic dial with a 6-way selectable dial
+  color (black/white, each with a diamond-set bezel, diamond hour markers, or
+  printed Arabic numerals) and independently selectable white/black hands.
+  The day-of-month window sits between 4 and 5 o'clock, tilted ~45 degrees
+  to match the dial art.
