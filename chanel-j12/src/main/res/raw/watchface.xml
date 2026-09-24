@@ -167,7 +167,7 @@
           </PartText>
         </ListOption>
         <ListOption id="3">
-          <PartText x="292" y="293" width="32" height="24" pivotX="0.5" pivotY="0.5">
+          <PartText x="292" y="294" width="32" height="24" pivotX="0.5" pivotY="0.5">
             <Transform target="angle" value="-45" />
             <Text align="CENTER" verticalAlign="CENTER">
               <Font family="roboto_regular" size="20" weight="NORMAL" slant="NORMAL" color="#000000">
@@ -176,7 +176,7 @@
             </Text>
             <Variant mode="AMBIENT" target="alpha" value="0" />
           </PartText>
-          <PartText x="292" y="293" width="32" height="24" pivotX="0.5" pivotY="0.5" alpha="0">
+          <PartText x="292" y="294" width="32" height="24" pivotX="0.5" pivotY="0.5" alpha="0">
             <Transform target="angle" value="-45" />
             <Text align="CENTER" verticalAlign="CENTER">
               <Font family="roboto_regular" size="20" weight="NORMAL" slant="NORMAL" color="#FFFFFF">
@@ -187,7 +187,7 @@
           </PartText>
         </ListOption>
         <ListOption id="4">
-          <PartText x="291" y="297" width="32" height="24" pivotX="0.5" pivotY="0.5">
+          <PartText x="292" y="300" width="32" height="24" pivotX="0.5" pivotY="0.5">
             <Transform target="angle" value="-45" />
             <Text align="CENTER" verticalAlign="CENTER">
               <Font family="roboto_regular" size="20" weight="NORMAL" slant="NORMAL" color="#000000">
@@ -196,7 +196,7 @@
             </Text>
             <Variant mode="AMBIENT" target="alpha" value="0" />
           </PartText>
-          <PartText x="291" y="297" width="32" height="24" pivotX="0.5" pivotY="0.5" alpha="0">
+          <PartText x="292" y="300" width="32" height="24" pivotX="0.5" pivotY="0.5" alpha="0">
             <Transform target="angle" value="-45" />
             <Text align="CENTER" verticalAlign="CENTER">
               <Font family="roboto_regular" size="20" weight="NORMAL" slant="NORMAL" color="#FFFFFF">
@@ -207,7 +207,7 @@
           </PartText>
         </ListOption>
         <ListOption id="5">
-          <PartText x="292" y="293" width="32" height="24" pivotX="0.5" pivotY="0.5">
+          <PartText x="292" y="294" width="32" height="24" pivotX="0.5" pivotY="0.5">
             <Transform target="angle" value="-45" />
             <Text align="CENTER" verticalAlign="CENTER">
               <Font family="roboto_regular" size="20" weight="NORMAL" slant="NORMAL" color="#000000">
@@ -216,7 +216,7 @@
             </Text>
             <Variant mode="AMBIENT" target="alpha" value="0" />
           </PartText>
-          <PartText x="292" y="293" width="32" height="24" pivotX="0.5" pivotY="0.5" alpha="0">
+          <PartText x="292" y="294" width="32" height="24" pivotX="0.5" pivotY="0.5" alpha="0">
             <Transform target="angle" value="-45" />
             <Text align="CENTER" verticalAlign="CENTER">
               <Font family="roboto_regular" size="20" weight="NORMAL" slant="NORMAL" color="#FFFFFF">
