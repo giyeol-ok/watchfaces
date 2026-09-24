@@ -233,8 +233,8 @@
     <ListConfiguration id="hand_color">
         <ListOption id="0">
           <AnalogClock x="0" y="0" width="450" height="450">
-            <HourHand resource="hour_hand_white" x="210" y="139" width="32" height="107" pivotX="0.499" pivotY="0.808" />
-            <MinuteHand resource="minute_hand_white" x="211" y="80" width="30" height="166" pivotX="0.498" pivotY="0.879" />
+            <HourHand resource="hour_hand_white" x="212" y="140" width="29" height="102" pivotX="0.4981" pivotY="0.8457" />
+            <MinuteHand resource="minute_hand_white" x="207" y="80" width="38" height="174" pivotX="0.5004" pivotY="0.8365" />
             <SecondHand resource="second_hand_white" x="214" y="171" width="22" height="206" pivotX="0.485" pivotY="0.265">
               <Sweep frequency="SYNC_TO_DEVICE" />
               <Variant mode="AMBIENT" target="alpha" value="0" />
@@ -243,8 +243,8 @@
         </ListOption>
         <ListOption id="1">
           <AnalogClock x="0" y="0" width="450" height="450">
-            <HourHand resource="hour_hand_black" x="210" y="139" width="32" height="107" pivotX="0.499" pivotY="0.808" />
-            <MinuteHand resource="minute_hand_black" x="211" y="80" width="30" height="166" pivotX="0.498" pivotY="0.879" />
+            <HourHand resource="hour_hand_black" x="212" y="140" width="29" height="102" pivotX="0.4981" pivotY="0.8457" />
+            <MinuteHand resource="minute_hand_black" x="207" y="80" width="38" height="174" pivotX="0.5004" pivotY="0.8365" />
             <SecondHand resource="second_hand_black" x="214" y="171" width="22" height="206" pivotX="0.485" pivotY="0.265">
               <Sweep frequency="SYNC_TO_DEVICE" />
               <Variant mode="AMBIENT" target="alpha" value="0" />
