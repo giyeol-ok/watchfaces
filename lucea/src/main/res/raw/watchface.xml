@@ -137,7 +137,7 @@
          position (3 o'clock), so a single shared PartText covers all of them. -->
     <PartText x="351" y="213" width="34" height="24" pivotX="0.5" pivotY="0.5">
       <Text align="CENTER">
-        <Font family="roboto_regular" size="18" weight="BOLD" slant="NORMAL" color="#000000">
+        <Font family="roboto_regular" size="22" weight="BOLD" slant="NORMAL" color="#000000">
           <Template>%d<Parameter expression="[DAY]" /></Template>
         </Font>
       </Text>
@@ -145,7 +145,7 @@
     </PartText>
     <PartText x="351" y="213" width="34" height="24" pivotX="0.5" pivotY="0.5" alpha="0">
       <Text align="CENTER">
-        <Font family="roboto_regular" size="18" weight="BOLD" slant="NORMAL" color="#FFFFFF">
+        <Font family="roboto_regular" size="22" weight="BOLD" slant="NORMAL" color="#FFFFFF">
           <Template>%d<Parameter expression="[DAY]" /></Template>
         </Font>
       </Text>
