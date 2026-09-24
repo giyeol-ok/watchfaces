@@ -13,35 +13,54 @@
       <Variant mode="AMBIENT" target="alpha" value="255" />
     </PartImage>
 
-    <!-- Tourbillon cage: rotates once per minute, 6 degrees per second. -->
-    <PartImage x="191" y="216" width="186" height="186" pivotX="0.5" pivotY="0.5">
-      <Image resource="tourbillon_cage" />
-      <Transform target="angle" value="[SECOND]*6" />
-      <Variant mode="AMBIENT" target="alpha" value="0" />
+    <!-- Ambient-only: the tourbillon window is a cutout in the dial art, so a
+         stopped, dimmed cage/bridge fill it in AOD instead of showing black. -->
+    <PartImage x="199" y="227" width="164" height="164" alpha="0">
+      <Image resource="tourbillon_cage_aod" />
+      <Variant mode="AMBIENT" target="alpha" value="255" />
+    </PartImage>
+    <PartImage x="174" y="290" width="214" height="37" alpha="0">
+      <Image resource="tourbillon_bridge_aod" />
+      <Variant mode="AMBIENT" target="alpha" value="255" />
     </PartImage>
 
+    <!-- Tourbillon cage: rotates once per minute via a continuous, device-synced sweep. -->
+    <AnalogClock x="0" y="0" width="450" height="450">
+      <SecondHand resource="tourbillon_cage" x="199" y="227" width="164" height="164" pivotX="0.5" pivotY="0.5">
+        <Sweep frequency="SYNC_TO_DEVICE" />
+        <Variant mode="AMBIENT" target="alpha" value="0" />
+      </SecondHand>
+    </AnalogClock>
+
     <!-- Tourbillon bridge: fixed, drawn over the rotating cage. -->
-    <PartImage x="159" y="289" width="243" height="47">
+    <PartImage x="174" y="290" width="214" height="37">
       <Image resource="tourbillon_bridge" />
       <Variant mode="AMBIENT" target="alpha" value="0" />
     </PartImage>
 
-    <!-- Weekday window, 10-11 o'clock -->
-    <PartText x="79" y="79" width="33" height="20">
+    <!-- Weekday window, 10-11 o'clock. Locale fixed to English so it's always a 3-letter abbreviation.
+         Box widened to match the printed white window in the dial art (was 33x20, much
+         narrower than the ~50x32 window); isAutoSize was shrinking the text back down to
+         fit the old narrow box, silently undoing the font-size increase on real devices. -->
+    <PartText x="69" y="75" width="46" height="28">
+      <Localization locales="en_US" />
       <Text align="CENTER" verticalAlign="CENTER" isAutoSize="true" maxLines="1">
-        <Font family="libre_baskerville_regular" size="20" minSize="10"
-              letterSpacing="-0.03" color="#141d33">
-          <Template>%s<Parameter expression="[DAY_OF_WEEK_S]" /></Template>
+        <Font family="libre_baskerville_regular" size="32" minSize="10" weight="BOLD"
+              letterSpacing="-0.1" color="#141d33" width="EXTRA_CONDENSED">
+          <Upper><Template>%s<Parameter expression="[DAY_OF_WEEK_S]" /></Template></Upper>
         </Font>
       </Text>
     </PartText>
 
-    <!-- Month window, 1-2 o'clock -->
-    <PartText x="337" y="78" width="36" height="22">
+    <!-- Month window, 1-2 o'clock. Locale fixed to English so it's always a 3-letter abbreviation.
+         Box widened to match the printed white window in the dial art (was 36x22, narrower
+         than the ~52x32 window), for the same isAutoSize reason as the weekday window above. -->
+    <PartText x="333" y="75" width="48" height="28">
+      <Localization locales="en_US" />
       <Text align="CENTER" verticalAlign="CENTER" isAutoSize="true" maxLines="1">
-        <Font family="libre_baskerville_regular" size="20" minSize="10"
-              letterSpacing="-0.03" color="#141d33">
-          <Template>%s<Parameter expression="[MONTH_S]" /></Template>
+        <Font family="libre_baskerville_regular" size="32" minSize="10" weight="BOLD"
+              letterSpacing="-0.04" color="#141d33" width="EXTRA_CONDENSED">
+          <Upper><Template>%s<Parameter expression="[MONTH_S]" /></Template></Upper>
         </Font>
       </Text>
     </PartText>
@@ -53,8 +72,13 @@
     </PartImage>
 
     <AnalogClock x="0" y="0" width="450" height="450">
-      <HourHand resource="hour_hand" x="210" y="71" width="32" height="171" pivotX="0.4774" pivotY="0.8983" />
-      <MinuteHand resource="minute_hand" x="214" y="46" width="28" height="198" pivotX="0.4667" pivotY="0.9196" />
+      <HourHand resource="hour_hand" x="213" y="73" width="35" height="171" pivotX="0.42879" pivotY="0.89827" />
+      <MinuteHand resource="minute_hand" x="211" y="42" width="28" height="198" pivotX="0.4667" pivotY="0.9196" />
     </AnalogClock>
+
+    <!-- Center hub cap: covers the hand pivots, drawn on top of all hands. -->
+    <PartImage x="207" y="207" width="36" height="36">
+      <Image resource="center_cap" />
+    </PartImage>
   </Scene>
 </WatchFace>

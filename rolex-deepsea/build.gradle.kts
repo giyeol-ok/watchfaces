@@ -19,7 +19,9 @@ android {
         applicationId = "com.giyeol.rolexdeepsea"
         minSdk = 33
         targetSdk = 33
-        versionCode = 1
+        // Auto-incrementing so every build (same signing key) installs as an
+        // update over whatever is already on the watch, no uninstall needed.
+        versionCode = (System.currentTimeMillis() / 60000L).toInt()
         versionName = "0.1.0"
     }
 
