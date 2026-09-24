@@ -4,15 +4,15 @@
   <Metadata key="CLOCK_TYPE" value="ANALOG" />
   <UserConfigurations>
     <ListConfiguration id="dial_color" displayName="dial_color_label" screenReaderText="dial_color_label" defaultValue="1">
-        <ListOption id="0" displayName="dial_pinkwg_label" screenReaderText="dial_pinkwg_label" />
-        <ListOption id="1" displayName="dial_whitewg_label" screenReaderText="dial_whitewg_label" />
-        <ListOption id="2" displayName="dial_whiterg_diamond_label" screenReaderText="dial_whiterg_diamond_label" />
-        <ListOption id="3" displayName="dial_malachite_rg_label" screenReaderText="dial_malachite_rg_label" />
-        <ListOption id="4" displayName="dial_teal_steel_label" screenReaderText="dial_teal_steel_label" />
+        <ListOption id="0" displayName="dial_pink_diamond_label" screenReaderText="dial_pink_diamond_label" />
+        <ListOption id="1" displayName="dial_white_diamond_label" screenReaderText="dial_white_diamond_label" />
+        <ListOption id="2" displayName="dial_white_diamond_rosegold_label" screenReaderText="dial_white_diamond_rosegold_label" />
+        <ListOption id="3" displayName="dial_malachite_label" screenReaderText="dial_malachite_label" />
+        <ListOption id="4" displayName="dial_pink_steel_label" screenReaderText="dial_pink_steel_label" />
         <ListOption id="5" displayName="dial_white_steel_label" screenReaderText="dial_white_steel_label" />
-        <ListOption id="6" displayName="dial_pink_steel_label" screenReaderText="dial_pink_steel_label" />
-        <ListOption id="7" displayName="dial_whiterg_thin_label" screenReaderText="dial_whiterg_thin_label" />
-        <ListOption id="8" displayName="dial_whiterg_thin_blackbg_label" screenReaderText="dial_whiterg_thin_blackbg_label" />
+        <ListOption id="6" displayName="dial_white_steel_thin_label" screenReaderText="dial_white_steel_thin_label" />
+        <ListOption id="7" displayName="dial_white_rosegold_thin_label" screenReaderText="dial_white_rosegold_thin_label" />
+        <ListOption id="8" displayName="dial_teal_steel_label" screenReaderText="dial_teal_steel_label" />
     </ListConfiguration>
     <ListConfiguration id="hand_color" displayName="hand_color_label" screenReaderText="hand_color_label" defaultValue="0">
         <ListOption id="0" displayName="hand_rosegold_label" screenReaderText="hand_rosegold_label" />
@@ -23,31 +23,31 @@
     <ListConfiguration id="dial_color">
         <ListOption id="0">
           <PartImage x="0" y="0" width="450" height="450">
-            <Image resource="dial_pinkwg" />
+            <Image resource="dial_pink_diamond" />
             <Variant mode="AMBIENT" target="alpha" value="0" />
           </PartImage>
         </ListOption>
         <ListOption id="1">
           <PartImage x="0" y="0" width="450" height="450">
-            <Image resource="dial_whitewg" />
+            <Image resource="dial_white_diamond" />
             <Variant mode="AMBIENT" target="alpha" value="0" />
           </PartImage>
         </ListOption>
         <ListOption id="2">
           <PartImage x="0" y="0" width="450" height="450">
-            <Image resource="dial_whiterg_diamond" />
+            <Image resource="dial_white_diamond_rosegold" />
             <Variant mode="AMBIENT" target="alpha" value="0" />
           </PartImage>
         </ListOption>
         <ListOption id="3">
           <PartImage x="0" y="0" width="450" height="450">
-            <Image resource="dial_malachite_rg" />
+            <Image resource="dial_malachite" />
             <Variant mode="AMBIENT" target="alpha" value="0" />
           </PartImage>
         </ListOption>
         <ListOption id="4">
           <PartImage x="0" y="0" width="450" height="450">
-            <Image resource="dial_teal_steel" />
+            <Image resource="dial_pink_steel" />
             <Variant mode="AMBIENT" target="alpha" value="0" />
           </PartImage>
         </ListOption>
@@ -59,19 +59,19 @@
         </ListOption>
         <ListOption id="6">
           <PartImage x="0" y="0" width="450" height="450">
-            <Image resource="dial_pink_steel" />
+            <Image resource="dial_white_steel_thin" />
             <Variant mode="AMBIENT" target="alpha" value="0" />
           </PartImage>
         </ListOption>
         <ListOption id="7">
           <PartImage x="0" y="0" width="450" height="450">
-            <Image resource="dial_whiterg_thin" />
+            <Image resource="dial_white_rosegold_thin" />
             <Variant mode="AMBIENT" target="alpha" value="0" />
           </PartImage>
         </ListOption>
         <ListOption id="8">
           <PartImage x="0" y="0" width="450" height="450">
-            <Image resource="dial_whiterg_thin_blackbg" />
+            <Image resource="dial_teal_steel" />
             <Variant mode="AMBIENT" target="alpha" value="0" />
           </PartImage>
         </ListOption>
@@ -80,31 +80,31 @@
     <ListConfiguration id="dial_color">
         <ListOption id="0">
           <PartImage x="0" y="0" width="450" height="450" alpha="0">
-            <Image resource="dial_pinkwg_aod" />
+            <Image resource="dial_pink_diamond_aod" />
             <Variant mode="AMBIENT" target="alpha" value="255" />
           </PartImage>
         </ListOption>
         <ListOption id="1">
           <PartImage x="0" y="0" width="450" height="450" alpha="0">
-            <Image resource="dial_whitewg_aod" />
+            <Image resource="dial_white_diamond_aod" />
             <Variant mode="AMBIENT" target="alpha" value="255" />
           </PartImage>
         </ListOption>
         <ListOption id="2">
           <PartImage x="0" y="0" width="450" height="450" alpha="0">
-            <Image resource="dial_whiterg_diamond_aod" />
+            <Image resource="dial_white_diamond_rosegold_aod" />
             <Variant mode="AMBIENT" target="alpha" value="255" />
           </PartImage>
         </ListOption>
         <ListOption id="3">
           <PartImage x="0" y="0" width="450" height="450" alpha="0">
-            <Image resource="dial_malachite_rg_aod" />
+            <Image resource="dial_malachite_aod" />
             <Variant mode="AMBIENT" target="alpha" value="255" />
           </PartImage>
         </ListOption>
         <ListOption id="4">
           <PartImage x="0" y="0" width="450" height="450" alpha="0">
-            <Image resource="dial_teal_steel_aod" />
+            <Image resource="dial_pink_steel_aod" />
             <Variant mode="AMBIENT" target="alpha" value="255" />
           </PartImage>
         </ListOption>
@@ -116,48 +116,41 @@
         </ListOption>
         <ListOption id="6">
           <PartImage x="0" y="0" width="450" height="450" alpha="0">
-            <Image resource="dial_pink_steel_aod" />
+            <Image resource="dial_white_steel_thin_aod" />
             <Variant mode="AMBIENT" target="alpha" value="255" />
           </PartImage>
         </ListOption>
         <ListOption id="7">
           <PartImage x="0" y="0" width="450" height="450" alpha="0">
-            <Image resource="dial_whiterg_thin_aod" />
+            <Image resource="dial_white_rosegold_thin_aod" />
             <Variant mode="AMBIENT" target="alpha" value="255" />
           </PartImage>
         </ListOption>
         <ListOption id="8">
           <PartImage x="0" y="0" width="450" height="450" alpha="0">
-            <Image resource="dial_whiterg_thin_blackbg_aod" />
+            <Image resource="dial_teal_steel_aod" />
             <Variant mode="AMBIENT" target="alpha" value="255" />
           </PartImage>
         </ListOption>
     </ListConfiguration>
-    <!-- Date window: only the pinkwg dial (option 0) has a date box printed on it. -->
-    <ListConfiguration id="dial_color">
-        <ListOption id="0">
-          <PartText x="349" y="212" width="31" height="23" pivotX="0.5" pivotY="0.5">
-            <Text align="CENTER">
-              <Font family="roboto_regular" size="18" weight="BOLD" slant="NORMAL" color="#000000">
-                <Template>%d<Parameter expression="[DAY]" /></Template>
-              </Font>
-            </Text>
-            <Variant mode="AMBIENT" target="alpha" value="0" />
-          </PartText>
-        </ListOption>
-    </ListConfiguration>
-    <ListConfiguration id="dial_color">
-        <ListOption id="0">
-          <PartText x="349" y="212" width="31" height="23" pivotX="0.5" pivotY="0.5" alpha="0">
-            <Text align="CENTER">
-              <Font family="roboto_regular" size="18" weight="BOLD" slant="NORMAL" color="#FFFFFF">
-                <Template>%d<Parameter expression="[DAY]" /></Template>
-              </Font>
-            </Text>
-            <Variant mode="AMBIENT" target="alpha" value="255" />
-          </PartText>
-        </ListOption>
-    </ListConfiguration>
+    <!-- Date window: every colorway now has a date box printed at the same
+         position (3 o'clock), so a single shared PartText covers all of them. -->
+    <PartText x="351" y="213" width="34" height="24" pivotX="0.5" pivotY="0.5">
+      <Text align="CENTER">
+        <Font family="roboto_regular" size="18" weight="BOLD" slant="NORMAL" color="#000000">
+          <Template>%d<Parameter expression="[DAY]" /></Template>
+        </Font>
+      </Text>
+      <Variant mode="AMBIENT" target="alpha" value="0" />
+    </PartText>
+    <PartText x="351" y="213" width="34" height="24" pivotX="0.5" pivotY="0.5" alpha="0">
+      <Text align="CENTER">
+        <Font family="roboto_regular" size="18" weight="BOLD" slant="NORMAL" color="#FFFFFF">
+          <Template>%d<Parameter expression="[DAY]" /></Template>
+        </Font>
+      </Text>
+      <Variant mode="AMBIENT" target="alpha" value="255" />
+    </PartText>
     <ListConfiguration id="hand_color">
         <ListOption id="0">
           <AnalogClock x="0" y="0" width="450" height="450">

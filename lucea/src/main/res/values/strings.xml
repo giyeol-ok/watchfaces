@@ -3,15 +3,15 @@
   <string name="watch_face_name">Bvlgari Lucea</string>
 
   <string name="dial_color_label">Dial</string>
-  <string name="dial_pinkwg_label">Pink Diamond</string>
-  <string name="dial_whitewg_label">White Diamond</string>
-  <string name="dial_whiterg_diamond_label">Rose Gold Diamond</string>
-  <string name="dial_malachite_rg_label">Malachite</string>
-  <string name="dial_teal_steel_label">Teal Steel</string>
-  <string name="dial_white_steel_label">White Steel</string>
+  <string name="dial_pink_diamond_label">Pink Diamond</string>
+  <string name="dial_white_diamond_label">White Diamond</string>
+  <string name="dial_white_diamond_rosegold_label">Rose Gold Diamond</string>
+  <string name="dial_malachite_label">Malachite</string>
   <string name="dial_pink_steel_label">Pink Steel</string>
-  <string name="dial_whiterg_thin_label">Ivory Rose Gold</string>
-  <string name="dial_whiterg_thin_blackbg_label">Pearl Rose Gold</string>
+  <string name="dial_white_steel_label">White Steel</string>
+  <string name="dial_white_steel_thin_label">White Steel Slim</string>
+  <string name="dial_white_rosegold_thin_label">White Rose Gold Slim</string>
+  <string name="dial_teal_steel_label">Teal Steel</string>
 
   <string name="hand_color_label">Hands</string>
   <string name="hand_rosegold_label">Rose Gold</string>
