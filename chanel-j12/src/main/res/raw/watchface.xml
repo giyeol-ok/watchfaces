@@ -22,19 +22,19 @@
          confirmed against the reference renders). -->
     <ListConfiguration id="dial_color">
         <ListOption id="0">
-          <PartImage x="0" y="5" width="450" height="450">
+          <PartImage x="0" y="8" width="450" height="450">
             <Image resource="dial_black_diamond" />
             <Variant mode="AMBIENT" target="alpha" value="0" />
           </PartImage>
         </ListOption>
         <ListOption id="1">
-          <PartImage x="0" y="5" width="450" height="450">
+          <PartImage x="0" y="8" width="450" height="450">
             <Image resource="dial_black_plain_diamond" />
             <Variant mode="AMBIENT" target="alpha" value="0" />
           </PartImage>
         </ListOption>
         <ListOption id="2">
-          <PartImage x="0" y="5" width="450" height="450">
+          <PartImage x="0" y="8" width="450" height="450">
             <Image resource="dial_black_plain_numeral" />
             <Variant mode="AMBIENT" target="alpha" value="0" />
           </PartImage>
@@ -62,19 +62,19 @@
          y-nudge as the active art above, since it's the same artwork. -->
     <ListConfiguration id="dial_color">
         <ListOption id="0">
-          <PartImage x="0" y="5" width="450" height="450" alpha="0">
+          <PartImage x="0" y="8" width="450" height="450" alpha="0">
             <Image resource="dial_black_diamond_aod" />
             <Variant mode="AMBIENT" target="alpha" value="255" />
           </PartImage>
         </ListOption>
         <ListOption id="1">
-          <PartImage x="0" y="5" width="450" height="450" alpha="0">
+          <PartImage x="0" y="8" width="450" height="450" alpha="0">
             <Image resource="dial_black_plain_diamond_aod" />
             <Variant mode="AMBIENT" target="alpha" value="255" />
           </PartImage>
         </ListOption>
         <ListOption id="2">
-          <PartImage x="0" y="5" width="450" height="450" alpha="0">
+          <PartImage x="0" y="8" width="450" height="450" alpha="0">
             <Image resource="dial_black_plain_numeral_aod" />
             <Variant mode="AMBIENT" target="alpha" value="255" />
           </PartImage>
@@ -107,7 +107,7 @@
          since the window art darkens along with the AOD dial. -->
     <ListConfiguration id="dial_color">
         <ListOption id="0">
-          <PartText x="291" y="304" width="32" height="24" pivotX="0.5" pivotY="0.5">
+          <PartText x="291" y="307" width="32" height="24" pivotX="0.5" pivotY="0.5">
             <Transform target="angle" value="-45" />
             <Text align="CENTER" verticalAlign="CENTER">
               <Font family="roboto_regular" size="20" weight="NORMAL" slant="NORMAL" color="#000000">
@@ -116,7 +116,7 @@
             </Text>
             <Variant mode="AMBIENT" target="alpha" value="0" />
           </PartText>
-          <PartText x="291" y="304" width="32" height="24" pivotX="0.5" pivotY="0.5" alpha="0">
+          <PartText x="291" y="307" width="32" height="24" pivotX="0.5" pivotY="0.5" alpha="0">
             <Transform target="angle" value="-45" />
             <Text align="CENTER" verticalAlign="CENTER">
               <Font family="roboto_regular" size="20" weight="NORMAL" slant="NORMAL" color="#FFFFFF">
@@ -127,7 +127,7 @@
           </PartText>
         </ListOption>
         <ListOption id="1">
-          <PartText x="291" y="304" width="32" height="24" pivotX="0.5" pivotY="0.5">
+          <PartText x="291" y="307" width="32" height="24" pivotX="0.5" pivotY="0.5">
             <Transform target="angle" value="-45" />
             <Text align="CENTER" verticalAlign="CENTER">
               <Font family="roboto_regular" size="20" weight="NORMAL" slant="NORMAL" color="#000000">
@@ -136,7 +136,7 @@
             </Text>
             <Variant mode="AMBIENT" target="alpha" value="0" />
           </PartText>
-          <PartText x="291" y="304" width="32" height="24" pivotX="0.5" pivotY="0.5" alpha="0">
+          <PartText x="291" y="307" width="32" height="24" pivotX="0.5" pivotY="0.5" alpha="0">
             <Transform target="angle" value="-45" />
             <Text align="CENTER" verticalAlign="CENTER">
               <Font family="roboto_regular" size="20" weight="NORMAL" slant="NORMAL" color="#FFFFFF">
@@ -147,7 +147,7 @@
           </PartText>
         </ListOption>
         <ListOption id="2">
-          <PartText x="291" y="304" width="32" height="24" pivotX="0.5" pivotY="0.5">
+          <PartText x="291" y="307" width="32" height="24" pivotX="0.5" pivotY="0.5">
             <Transform target="angle" value="-45" />
             <Text align="CENTER" verticalAlign="CENTER">
               <Font family="roboto_regular" size="20" weight="NORMAL" slant="NORMAL" color="#000000">
@@ -156,7 +156,7 @@
             </Text>
             <Variant mode="AMBIENT" target="alpha" value="0" />
           </PartText>
-          <PartText x="291" y="304" width="32" height="24" pivotX="0.5" pivotY="0.5" alpha="0">
+          <PartText x="291" y="307" width="32" height="24" pivotX="0.5" pivotY="0.5" alpha="0">
             <Transform target="angle" value="-45" />
             <Text align="CENTER" verticalAlign="CENTER">
               <Font family="roboto_regular" size="20" weight="NORMAL" slant="NORMAL" color="#FFFFFF">
