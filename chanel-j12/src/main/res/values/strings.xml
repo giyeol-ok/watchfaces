@@ -13,4 +13,5 @@
   <string name="hand_color_label">Hands</string>
   <string name="hand_white_label">White</string>
   <string name="hand_black_label">Black</string>
+  <string name="hand_silver_label">Silver</string>
 </resources>

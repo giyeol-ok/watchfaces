@@ -87,6 +87,7 @@ minutes usage minimal:
   dial's two white windows (10-11 o'clock and 1-2 o'clock).
 - `chanel-j12/` - Chanel J12-styled ceramic dial with a 6-way selectable dial
   color (black/white, each with a diamond-set bezel, diamond hour markers, or
-  printed Arabic numerals) and independently selectable white/black hands.
-  The day-of-month window sits between 4 and 5 o'clock, tilted ~45 degrees
-  to match the dial art.
+  printed Arabic numerals) and independently selectable white/black/silver
+  hands. The day-of-month window sits between 4 and 5 o'clock, tilted ~45
+  degrees to match the dial art; on the black dials the window itself is
+  printed black, so its date digits render in white to stay legible.
