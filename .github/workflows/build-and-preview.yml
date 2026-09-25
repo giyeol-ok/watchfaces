@@ -1,16 +1,47 @@
 name: Build & Preview Watch Faces
 
-# Path-filtered: only the watch face module(s) whose files actually changed
-# get built and previewed. To add a new watch face:
+# Two ways this runs, kept deliberately separate so a manual build of one
+# watch face never costs Actions minutes on the other eight:
+#   - push to main: path-filtered via dorny/paths-filter (clean before/after
+#     diff on a push, so this is reliable) -- only the watch face(s) whose
+#     files actually changed get built.
+#   - workflow_dispatch: the person triggering picks exactly one watch face
+#     (or "all") from the dropdown below. This skips path-diffing entirely,
+#     which matters because diffing "branch vs main" is NOT reliable for a
+#     long-lived feature branch -- once any file under a watch face's path
+#     has ever differed from main on that branch, the diff-based filter
+#     stays "changed" for that face on every subsequent manual run for the
+#     rest of the branch's life, silently rebuilding faces nobody touched.
+#
+# To add a new watch face:
 #   1. Add a filter entry below (module-name: [module-name/**]).
-#   2. Copy the build-<name>/preview-<name> job pair and swap the module name.
+#   2. Add its name to the workflow_dispatch "watchface" input's options.
+#   3. Copy a build-<name>/preview-<name> job pair, swap the module name, and
+#      give it the same two-branch `if:` (push-path-filter OR dispatch-pick).
 on:
   workflow_dispatch:
+    inputs:
+      watchface:
+        description: "Which watch face to build (or 'all')"
+        required: true
+        type: choice
+        options:
+          - moonswatch-snoopy
+          - moonswatch-snoopy2
+          - rolex-deepsea
+          - rolex-deepsea2
+          - lollipop
+          - breguet
+          - hublot-balloondog
+          - lucea
+          - chanel-j12
+          - all
   push:
     branches: [main]
 
 jobs:
   changes:
+    if: github.event_name == 'push'
     runs-on: ubuntu-latest
     outputs:
       moonswatch-snoopy: ${{ steps.filter.outputs.moonswatch-snoopy }}
@@ -94,7 +125,11 @@ jobs:
 
   build-chanel-j12:
     needs: changes
-    if: needs.changes.outputs.chanel-j12 == 'true'
+    if: |
+      always() && (
+        (github.event_name == 'push' && needs.changes.outputs.chanel-j12 == 'true') ||
+        (github.event_name == 'workflow_dispatch' && contains(fromJSON('["chanel-j12","all"]'), inputs.watchface))
+      )
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -124,7 +159,11 @@ jobs:
 
   build-lucea:
     needs: changes
-    if: needs.changes.outputs.lucea == 'true'
+    if: |
+      always() && (
+        (github.event_name == 'push' && needs.changes.outputs.lucea == 'true') ||
+        (github.event_name == 'workflow_dispatch' && contains(fromJSON('["lucea","all"]'), inputs.watchface))
+      )
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -154,7 +193,11 @@ jobs:
 
   build-hublot-balloondog:
     needs: changes
-    if: needs.changes.outputs.hublot-balloondog == 'true'
+    if: |
+      always() && (
+        (github.event_name == 'push' && needs.changes.outputs.hublot-balloondog == 'true') ||
+        (github.event_name == 'workflow_dispatch' && contains(fromJSON('["hublot-balloondog","all"]'), inputs.watchface))
+      )
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -184,7 +227,11 @@ jobs:
 
   build-breguet:
     needs: changes
-    if: needs.changes.outputs.breguet == 'true'
+    if: |
+      always() && (
+        (github.event_name == 'push' && needs.changes.outputs.breguet == 'true') ||
+        (github.event_name == 'workflow_dispatch' && contains(fromJSON('["breguet","all"]'), inputs.watchface))
+      )
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -214,7 +261,11 @@ jobs:
 
   build-lollipop:
     needs: changes
-    if: needs.changes.outputs.lollipop == 'true'
+    if: |
+      always() && (
+        (github.event_name == 'push' && needs.changes.outputs.lollipop == 'true') ||
+        (github.event_name == 'workflow_dispatch' && contains(fromJSON('["lollipop","all"]'), inputs.watchface))
+      )
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -244,7 +295,11 @@ jobs:
 
   build-rolex-deepsea2:
     needs: changes
-    if: needs.changes.outputs.rolex-deepsea2 == 'true'
+    if: |
+      always() && (
+        (github.event_name == 'push' && needs.changes.outputs.rolex-deepsea2 == 'true') ||
+        (github.event_name == 'workflow_dispatch' && contains(fromJSON('["rolex-deepsea2","all"]'), inputs.watchface))
+      )
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -274,7 +329,11 @@ jobs:
 
   build-rolex-deepsea:
     needs: changes
-    if: needs.changes.outputs.rolex-deepsea == 'true'
+    if: |
+      always() && (
+        (github.event_name == 'push' && needs.changes.outputs.rolex-deepsea == 'true') ||
+        (github.event_name == 'workflow_dispatch' && contains(fromJSON('["rolex-deepsea","all"]'), inputs.watchface))
+      )
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -304,7 +363,11 @@ jobs:
 
   build-moonswatch-snoopy2:
     needs: changes
-    if: needs.changes.outputs.moonswatch-snoopy2 == 'true'
+    if: |
+      always() && (
+        (github.event_name == 'push' && needs.changes.outputs.moonswatch-snoopy2 == 'true') ||
+        (github.event_name == 'workflow_dispatch' && contains(fromJSON('["moonswatch-snoopy2","all"]'), inputs.watchface))
+      )
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -334,7 +397,11 @@ jobs:
 
   build-moonswatch-snoopy:
     needs: changes
-    if: needs.changes.outputs.moonswatch-snoopy == 'true'
+    if: |
+      always() && (
+        (github.event_name == 'push' && needs.changes.outputs.moonswatch-snoopy == 'true') ||
+        (github.event_name == 'workflow_dispatch' && contains(fromJSON('["moonswatch-snoopy","all"]'), inputs.watchface))
+      )
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -364,7 +431,11 @@ jobs:
 
   preview-moonswatch-snoopy:
     needs: [changes, build-moonswatch-snoopy]
-    if: needs.changes.outputs.moonswatch-snoopy == 'true'
+    if: |
+      always() && (
+        (github.event_name == 'push' && needs.changes.outputs.moonswatch-snoopy == 'true') ||
+        (github.event_name == 'workflow_dispatch' && contains(fromJSON('["moonswatch-snoopy","all"]'), inputs.watchface))
+      )
     runs-on: ubuntu-latest
     permissions:
       contents: write

@@ -31,11 +31,21 @@ adding a watch face.
    `.github/scripts/install_and_activate.sh <apk-path> <application-id>`
    first, then capture whatever screenshots make sense for that face.
 3. In `.github/workflows/build-and-preview.yml`, add `<name>` to the
-   `paths-filter` block and copy the `build-moonswatch-snoopy` /
-   `preview-moonswatch-snoopy` job pair, swapping the module name.
+   `paths-filter` block, add it to the `workflow_dispatch` `watchface`
+   dropdown's options, and copy the `build-moonswatch-snoopy` /
+   `preview-moonswatch-snoopy` job pair, swapping the module name and
+   giving it the same two-branch `if:` (see the comment at the top of the
+   workflow file).
 
-CI only builds and previews the watch face(s) whose files actually changed
-in a given push.
+CI has two ways to build, kept intentionally separate to keep Actions
+minutes usage minimal:
+- **Push to `main`**: path-filtered, only the watch face(s) whose files
+  actually changed in that push get built.
+- **Manual run** (Actions tab → "Run workflow"): pick exactly one watch
+  face (or "all") from the dropdown. Manual runs don't rely on file-diffing
+  at all, since that's unreliable once a long-lived branch has ever touched
+  a face's files - it'd rebuild every face on every manual run for the rest
+  of that branch's life otherwise.
 
 ### Standard requirements for every watch face
 
