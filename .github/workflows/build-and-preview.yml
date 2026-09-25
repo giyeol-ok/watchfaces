@@ -132,7 +132,7 @@ jobs:
       )
     runs-on: ubuntu-latest
     permissions:
-      contents: read
+      contents: write
     steps:
       - name: Checkout source
         uses: actions/checkout@v4
@@ -155,6 +155,20 @@ jobs:
         with:
           name: chanel-j12-APK
           path: chanel-j12/build/outputs/apk/debug/*.apk
+
+      # actions/upload-artifact links require being logged into GitHub to
+      # download, even on a public repo, and don't reliably show up on the
+      # mobile web UI at all. A release asset doesn't have either problem,
+      # so this gives a plain link anyone can download from. Reuses one
+      # rolling tag so the link never changes between builds.
+      - name: Publish APK as a public download link
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: chanel-j12-latest
+          name: chanel-j12 (latest build)
+          body: Auto-published by CI from ${{ github.sha }}. Not a versioned release -- just a stable, login-free download link for the debug APK.
+          prerelease: true
+          files: chanel-j12/build/outputs/apk/debug/*.apk
           if-no-files-found: error
 
   build-lucea:
