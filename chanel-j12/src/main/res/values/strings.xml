@@ -8,6 +8,7 @@
   <string name="dial_black_plain_numeral_label">Black Numerals</string>
   <string name="dial_white_diamond_label">White Diamond</string>
   <string name="dial_white_plain_diamond_label">White Diamond Markers</string>
+  <string name="dial_white_bezel_label">White Bezel</string>
   <string name="dial_white_plain_numeral_label">White Numerals</string>
 
   <string name="hand_color_label">Hands</string>
