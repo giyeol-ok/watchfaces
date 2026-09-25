@@ -121,7 +121,7 @@
          since the window art darkens along with the AOD dial. -->
     <ListConfiguration id="dial_color">
         <ListOption id="0">
-          <PartText x="293" y="301" width="32" height="24" pivotX="0.5" pivotY="0.5">
+          <PartText x="294" y="301" width="32" height="24" pivotX="0.5" pivotY="0.5">
             <Transform target="angle" value="-45" />
             <Text align="CENTER" verticalAlign="CENTER">
               <Font family="archivo_narrow" size="20" weight="NORMAL" slant="NORMAL" color="#FFFFFF">
@@ -130,7 +130,7 @@
             </Text>
             <Variant mode="AMBIENT" target="alpha" value="0" />
           </PartText>
-          <PartText x="293" y="301" width="32" height="24" pivotX="0.5" pivotY="0.5" alpha="0">
+          <PartText x="294" y="301" width="32" height="24" pivotX="0.5" pivotY="0.5" alpha="0">
             <Transform target="angle" value="-45" />
             <Text align="CENTER" verticalAlign="CENTER">
               <Font family="archivo_narrow" size="20" weight="NORMAL" slant="NORMAL" color="#FFFFFF">
@@ -201,7 +201,7 @@
           </PartText>
         </ListOption>
         <ListOption id="4">
-          <PartText x="292" y="296" width="32" height="24" pivotX="0.5" pivotY="0.5">
+          <PartText x="291" y="296" width="32" height="24" pivotX="0.5" pivotY="0.5">
             <Transform target="angle" value="-45" />
             <Text align="CENTER" verticalAlign="CENTER">
               <Font family="archivo_narrow" size="20" weight="NORMAL" slant="NORMAL" color="#000000">
@@ -210,7 +210,7 @@
             </Text>
             <Variant mode="AMBIENT" target="alpha" value="0" />
           </PartText>
-          <PartText x="292" y="296" width="32" height="24" pivotX="0.5" pivotY="0.5" alpha="0">
+          <PartText x="291" y="296" width="32" height="24" pivotX="0.5" pivotY="0.5" alpha="0">
             <Transform target="angle" value="-45" />
             <Text align="CENTER" verticalAlign="CENTER">
               <Font family="archivo_narrow" size="20" weight="NORMAL" slant="NORMAL" color="#FFFFFF">
