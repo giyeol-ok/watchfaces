@@ -235,7 +235,7 @@
         <ListOption id="0">
           <AnalogClock x="0" y="0" width="450" height="450">
             <HourHand resource="hour_hand_white" x="213" y="140" width="27" height="99" pivotX="0.4944" pivotY="0.8682" />
-            <MinuteHand resource="minute_hand_white" x="209" y="80" width="35" height="163" pivotX="0.5020" pivotY="0.8938" />
+            <MinuteHand resource="minute_hand_white" x="213" y="80" width="27" height="163" pivotX="0.5020" pivotY="0.8938" />
             <SecondHand resource="second_hand_white" x="214" y="148" width="19" height="229" pivotX="0.5620" pivotY="0.3381">
               <Sweep frequency="SYNC_TO_DEVICE" />
               <Variant mode="AMBIENT" target="alpha" value="0" />
@@ -245,7 +245,7 @@
         <ListOption id="1">
           <AnalogClock x="0" y="0" width="450" height="450">
             <HourHand resource="hour_hand_black" x="213" y="140" width="27" height="99" pivotX="0.4944" pivotY="0.8682" />
-            <MinuteHand resource="minute_hand_black" x="209" y="80" width="35" height="163" pivotX="0.5020" pivotY="0.8938" />
+            <MinuteHand resource="minute_hand_black" x="213" y="80" width="27" height="163" pivotX="0.5020" pivotY="0.8938" />
             <SecondHand resource="second_hand_black" x="214" y="148" width="19" height="229" pivotX="0.5620" pivotY="0.3381">
               <Sweep frequency="SYNC_TO_DEVICE" />
               <Variant mode="AMBIENT" target="alpha" value="0" />
@@ -255,7 +255,7 @@
         <ListOption id="2">
           <AnalogClock x="0" y="0" width="450" height="450">
             <HourHand resource="hour_hand_silver" x="213" y="140" width="27" height="99" pivotX="0.4944" pivotY="0.8682" />
-            <MinuteHand resource="minute_hand_silver" x="209" y="80" width="35" height="163" pivotX="0.5020" pivotY="0.8938" />
+            <MinuteHand resource="minute_hand_silver" x="213" y="80" width="27" height="163" pivotX="0.5020" pivotY="0.8938" />
             <SecondHand resource="second_hand_silver" x="214" y="148" width="19" height="229" pivotX="0.5620" pivotY="0.3381">
               <Sweep frequency="SYNC_TO_DEVICE" />
               <Variant mode="AMBIENT" target="alpha" value="0" />
