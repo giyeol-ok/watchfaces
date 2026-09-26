@@ -85,10 +85,15 @@ minutes usage minimal:
   hands from centre plus a date hand pointing at the inner 1-31 date ring.
   The current weekday and month are shown as 3-letter abbreviations in the
   dial's two white windows (10-11 o'clock and 1-2 o'clock).
-- `chanel-j12/` - Chanel J12-styled ceramic dial with a 7-way selectable dial
+- `chanel-j12/` - Chanel J12-styled ceramic dial with a 6-way selectable dial
   color (black/white, each with a diamond-set bezel, diamond hour markers, or
-  printed Arabic numerals, plus a white sport-bezel style with a rotating
-  0/15/30/45 timing scale) and independently selectable white/black/silver
+  printed Arabic numerals) and independently selectable white/black/silver
   hands. The day-of-month window sits between 4 and 5 o'clock, tilted ~45
   degrees to match the dial art; on the black dials the window itself is
   printed black, so its date digits render in white to stay legible.
+- `chanel-j12-2/` - a snapshot of `chanel-j12` from a later round of dial
+  art, kept as its own watch face (own package/app ID, installs alongside
+  `chanel-j12`) rather than overwriting it. Adds a 7th dial color, a white
+  sport-bezel style with a rotating 0/15/30/45 timing scale, refreshed
+  renders for several of the other dials, and a narrower (Archivo Narrow)
+  date font.

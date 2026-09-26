@@ -35,6 +35,7 @@ on:
           - hublot-balloondog
           - lucea
           - chanel-j12
+          - chanel-j12-2
           - all
   push:
     branches: [main]
@@ -53,6 +54,7 @@ jobs:
       hublot-balloondog: ${{ steps.filter.outputs.hublot-balloondog }}
       lucea: ${{ steps.filter.outputs.lucea }}
       chanel-j12: ${{ steps.filter.outputs.chanel-j12 }}
+      chanel-j12-2: ${{ steps.filter.outputs.chanel-j12-2 }}
     steps:
       - uses: actions/checkout@v4
       - uses: dorny/paths-filter@v3
@@ -122,6 +124,13 @@ jobs:
               - 'build.gradle.kts'
               - 'settings.gradle.kts'
               - 'gradle/**'
+            chanel-j12-2:
+              - 'chanel-j12-2/**'
+              - '.github/workflows/build-and-preview.yml'
+              - '.github/scripts/**'
+              - 'build.gradle.kts'
+              - 'settings.gradle.kts'
+              - 'gradle/**'
 
   build-chanel-j12:
     needs: changes
@@ -169,6 +178,50 @@ jobs:
           body: Auto-published by CI from ${{ github.sha }}. Not a versioned release -- just a stable, login-free download link for the debug APK.
           prerelease: true
           files: chanel-j12/build/outputs/apk/debug/*.apk
+          if-no-files-found: error
+
+  build-chanel-j12-2:
+    needs: changes
+    if: |
+      always() && (
+        (github.event_name == 'push' && needs.changes.outputs.chanel-j12-2 == 'true') ||
+        (github.event_name == 'workflow_dispatch' && contains(fromJSON('["chanel-j12-2","all"]'), inputs.watchface))
+      )
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v4
+
+      - name: Set up Java 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+          cache: gradle
+
+      - name: Make Gradle executable
+        run: chmod +x gradlew
+
+      - name: Build debug APK
+        run: ./gradlew :chanel-j12-2:assembleDebug
+
+      - name: Upload installable APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: chanel-j12-2-APK
+          path: chanel-j12-2/build/outputs/apk/debug/*.apk
+
+      # Same login-free release-asset link as chanel-j12 -- see its job for why.
+      - name: Publish APK as a public download link
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: chanel-j12-2-latest
+          name: chanel-j12-2 (latest build)
+          body: Auto-published by CI from ${{ github.sha }}. Not a versioned release -- just a stable, login-free download link for the debug APK.
+          prerelease: true
+          files: chanel-j12-2/build/outputs/apk/debug/*.apk
           if-no-files-found: error
 
   build-lucea:
