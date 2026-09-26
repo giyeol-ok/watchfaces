@@ -97,3 +97,19 @@ minutes usage minimal:
   sport-bezel style with a rotating 0/15/30/45 timing scale, refreshed
   renders for several of the other dials, and a narrower (Archivo Narrow)
   date font.
+- `snoopy1-moonswatch/` (스누피워치1) - migrated from the `Watchface-swatch`
+  repo: Omega x Swatch Speedmaster dial (`New Moon Black` / `Full Moon White`)
+  with a rotating Snoopy-on-crescent moon-phase disc and the date under the
+  MOONSWATCH wordmark. A newer take on `moonswatch-snoopy`, installed as its
+  own app (`com.giyeol.snoopy1moonswatch`) so both can coexist.
+- `snoopy2-earth/` (스누피워치2) - migrated from `Watchface-swatch`: dial
+  redrawn with Earth + spacesuit-Snoopy art, a starry twin-full-moon
+  moon-phase disc, and the date under MOONSWATCH
+  (`com.giyeol.snoopy2earth`).
+- `snoopy3-earth-subdial/` (스누피워치3) - migrated from `Watchface-swatch`:
+  the `snoopy1-moonswatch` dial with `snoopy2-earth`'s Earth/Snoopy art
+  placed in the 10 o'clock subdial (`com.giyeol.snoopy3earthsubdial`).
+- `rolex-datejust/` (롤렉스워치) - migrated from `Watchface-swatch`: Rolex
+  Datejust dial with rose-gold dauphine hands and a live date window at 3
+  o'clock. Selectable `Black Diamond` / `Black Onyx Diamond` / `Pink Diamond`
+  dial (`com.giyeol.rolexdatejust`).
