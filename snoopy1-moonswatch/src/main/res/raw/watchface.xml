@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WatchFace width="450" height="450">
+  <Metadata key="PREVIEW_TIME" value="10:09:32" />
+  <Metadata key="CLOCK_TYPE" value="ANALOG" />
+  <UserConfigurations>
+    <ListConfiguration id="dial_style" displayName="dial_style_label" screenReaderText="dial_style_label" defaultValue="1">
+      <ListOption id="0" displayName="dial_lunar_label" screenReaderText="dial_lunar_label" />
+      <ListOption id="1" displayName="dial_white_label" screenReaderText="dial_white_label" />
+    </ListConfiguration>
+  </UserConfigurations>
+  <Scene>
+    <ListConfiguration id="dial_style">
+      <ListOption id="0">
+        <PartImage x="250" y="140" width="120" height="120" pivotX="0.5" pivotY="0.5">
+          <Image resource="snoopy_disc_lunar" />
+          <Transform target="angle" value="([MOON_PHASE_POSITION] * 6.428571) + 87.9300" />
+          <Variant mode="AMBIENT" target="alpha" value="0" />
+        </PartImage>
+        <PartImage x="0" y="0" width="450" height="450"><Image resource="dial_lunar" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage>
+        <AnalogClock x="0" y="0" width="450" height="450">
+          <SecondHand resource="second_lunar_final" x="218" y="265" width="14" height="60" pivotX="0.5" pivotY="0.866667"><Variant mode="AMBIENT" target="alpha" value="0" /><Sweep frequency="15" /></SecondHand>
+          <MinuteHand resource="minute_lunar_final" x="208" y="55" width="34" height="188" pivotX="0.499002" pivotY="0.906667"><Variant mode="AMBIENT" target="alpha" value="0" /></MinuteHand>
+          <HourHand resource="hour_lunar_final" x="205" y="101" width="40" height="144" pivotX="0.498244" pivotY="0.860674"><Variant mode="AMBIENT" target="alpha" value="0" /></HourHand>
+        </AnalogClock>
+        <PartText x="286" y="287" width="56" height="26">
+          <Variant mode="AMBIENT" target="alpha" value="0" />
+          <Text align="CENTER">
+            <Font family="SYNC_TO_DEVICE" size="22" color="#FFFFFF" weight="BOLD">
+              <Template>%d/%d<Parameter expression="[MONTH]"/><Parameter expression="[DAY]"/></Template>
+            </Font>
+          </Text>
+        </PartText>
+      </ListOption>
+      <ListOption id="1">
+        <PartImage x="254" y="138" width="120" height="120" pivotX="0.5" pivotY="0.5">
+          <Image resource="snoopy_disc_white" />
+          <Transform target="angle" value="([MOON_PHASE_POSITION] * 6.428571) + 90.0000" />
+          <Variant mode="AMBIENT" target="alpha" value="0" />
+        </PartImage>
+        <PartImage x="0" y="0" width="450" height="450"><Image resource="dial_white" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage>
+        <AnalogClock x="0" y="0" width="450" height="450">
+          <SecondHand resource="second_white_final" x="220" y="274" width="14" height="60" pivotX="0.5" pivotY="0.875"><Variant mode="AMBIENT" target="alpha" value="0" /><Sweep frequency="15" /></SecondHand>
+          <MinuteHand resource="minute_white_final" x="210" y="55" width="30" height="186" pivotX="0.5" pivotY="0.913978"><Variant mode="AMBIENT" target="alpha" value="0" /></MinuteHand>
+          <HourHand resource="hour_white_final" x="206" y="107" width="38" height="137" pivotX="0.5" pivotY="0.861314"><Variant mode="AMBIENT" target="alpha" value="0" /></HourHand>
+        </AnalogClock>
+        <PartText x="286" y="287" width="56" height="26">
+          <Variant mode="AMBIENT" target="alpha" value="0" />
+          <Text align="CENTER">
+            <Font family="SYNC_TO_DEVICE" size="22" color="#000000" weight="BOLD">
+              <Template>%d/%d<Parameter expression="[MONTH]"/><Parameter expression="[DAY]"/></Template>
+            </Font>
+          </Text>
+        </PartText>
+      </ListOption>
+    </ListConfiguration>
+    <PartImage x="0" y="0" width="450" height="450" alpha="0"><Image resource="aod_moon_screen" /><Variant mode="AMBIENT" target="alpha" value="255" /></PartImage>
+    <PartImage x="0" y="0" width="450" height="450" alpha="0"><Image resource="aod_clock_scrim" /><Variant mode="AMBIENT" target="alpha" value="255" /></PartImage>
+    <DigitalClock x="282" y="248" width="120" height="40" alpha="0">
+      <Variant mode="AMBIENT" target="alpha" value="255" />
+      <TimeText x="0" y="0" width="120" height="40" format="hh:mm"><Font family="SYNC_TO_DEVICE" size="26" color="#18F6E3" weight="BOLD" /></TimeText>
+    </DigitalClock>
+  </Scene>
+</WatchFace>

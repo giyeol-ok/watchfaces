@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WatchFace width="450" height="450">
+  <Metadata key="PREVIEW_TIME" value="10:10:32" />
+  <Metadata key="CLOCK_TYPE" value="ANALOG" />
+  <UserConfigurations>
+    <ListConfiguration id="dial_style" displayName="dial_style_label" screenReaderText="dial_style_label" defaultValue="0">
+      <ListOption id="0" displayName="dial_black_label" screenReaderText="dial_black_label" />
+      <ListOption id="1" displayName="dial_onyx_label" screenReaderText="dial_onyx_label" />
+      <ListOption id="2" displayName="dial_pink_label" screenReaderText="dial_pink_label" />
+    </ListConfiguration>
+  </UserConfigurations>
+  <Scene>
+    <ListConfiguration id="dial_style">
+      <ListOption id="0">
+        <PartImage x="0" y="0" width="450" height="450">
+          <Image resource="dial_black_white" />
+          <Variant mode="AMBIENT" target="alpha" value="110" />
+        </PartImage>
+        <PartText x="315" y="205" width="68" height="44">
+          <Variant mode="AMBIENT" target="alpha" value="110" />
+          <Text align="CENTER">
+            <Font family="SYNC_TO_DEVICE" size="26" color="#2D1E1C" weight="BOLD">
+              <Template>%d<Parameter expression="[DAY]"/></Template>
+            </Font>
+          </Text>
+        </PartText>
+        <AnalogClock x="0" y="0" width="450" height="450">
+          <SecondHand resource="second_rolex2" x="214" y="90" width="21" height="194" pivotX="0.497120" pivotY="0.712006"><Variant mode="AMBIENT" target="alpha" value="0" /><Sweep frequency="15" /></SecondHand>
+          <MinuteHand resource="minute_rolex2" x="214" y="120" width="20" height="129" pivotX="0.497905" pivotY="0.834439" />
+          <HourHand resource="hour_rolex2" x="211" y="146" width="24" height="95" pivotX="0.521763" pivotY="0.859948" />
+        </AnalogClock>
+      </ListOption>
+      <ListOption id="1">
+        <PartImage x="0" y="0" width="450" height="450">
+          <Image resource="dial_black_onyx" />
+          <Variant mode="AMBIENT" target="alpha" value="110" />
+        </PartImage>
+        <PartText x="315" y="205" width="68" height="44">
+          <Variant mode="AMBIENT" target="alpha" value="110" />
+          <Text align="CENTER">
+            <Font family="SYNC_TO_DEVICE" size="26" color="#2D1E1C" weight="BOLD">
+              <Template>%d<Parameter expression="[DAY]"/></Template>
+            </Font>
+          </Text>
+        </PartText>
+        <AnalogClock x="0" y="0" width="450" height="450">
+          <SecondHand resource="second_rolex2" x="214" y="90" width="21" height="194" pivotX="0.497120" pivotY="0.712006"><Variant mode="AMBIENT" target="alpha" value="0" /><Sweep frequency="15" /></SecondHand>
+          <MinuteHand resource="minute_rolex2" x="214" y="120" width="20" height="129" pivotX="0.497905" pivotY="0.834439" />
+          <HourHand resource="hour_rolex2" x="211" y="146" width="24" height="95" pivotX="0.521763" pivotY="0.859948" />
+        </AnalogClock>
+      </ListOption>
+      <ListOption id="2">
+        <PartImage x="0" y="0" width="450" height="450">
+          <Image resource="dial_rolex2" />
+          <Variant mode="AMBIENT" target="alpha" value="110" />
+        </PartImage>
+        <PartText x="315" y="207" width="70" height="46">
+          <Variant mode="AMBIENT" target="alpha" value="110" />
+          <Text align="CENTER">
+            <Font family="SYNC_TO_DEVICE" size="26" color="#2D1E1C" weight="BOLD">
+              <Template>%d<Parameter expression="[DAY]"/></Template>
+            </Font>
+          </Text>
+        </PartText>
+        <AnalogClock x="0" y="0" width="450" height="450">
+          <SecondHand resource="second_rolex2" x="214" y="90" width="21" height="194" pivotX="0.497120" pivotY="0.712006"><Variant mode="AMBIENT" target="alpha" value="0" /><Sweep frequency="15" /></SecondHand>
+          <MinuteHand resource="minute_rolex2" x="214" y="120" width="20" height="129" pivotX="0.497905" pivotY="0.834439" />
+          <HourHand resource="hour_rolex2" x="211" y="146" width="24" height="95" pivotX="0.521763" pivotY="0.859948" />
+        </AnalogClock>
+      </ListOption>
+    </ListConfiguration>
+  </Scene>
+</WatchFace>
